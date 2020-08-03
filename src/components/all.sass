@@ -5,8 +5,9 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: #15116f
+$primary-invert: #fff
+$secondary: #f4b4d0
 $body-color: #333
 $black: #2b2523
 
@@ -43,11 +44,9 @@ $black: #2b2523
   align-items: center
 
 .full-width-image
-    width: 100vw
-    height: 400px
+    width: 100%
     background-size: cover
-    background-position: bottom
-    display: flex
+    background-position: center
     justify-content: center
     align-items: center
 
@@ -72,7 +71,7 @@ $black: #2b2523
   margin-top: 0 !important
 
 .navbar-item .icon
-  color: $primary
+  color: #fff
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -138,3 +137,15 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+// hot-meidaimae customize
+.navbar-item img 
+  max-height: 6rem;
+
+.navbar
+  background-color: $primary
+  position: fixed
+  width: 100%
+
+.navbar-item 
+  color: #fff;
