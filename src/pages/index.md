@@ -2,8 +2,12 @@
 templateKey: index-page
 title: ほっとステーション明大前店
 image: /img/logo.jpg
+photos:
+  - image: /img/20200714_renewaldeveloped2.jpg
+    text: test
+  - image: /img/DSC00735_h800-min.jpg
+    text: test
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: リニューアルオープンしました！！
   description: |-

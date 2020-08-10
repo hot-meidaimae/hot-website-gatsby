@@ -1,22 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { EffectFade } from "swiper";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
+SwiperCore.use([EffectFade]);
+
 export const IndexPageTemplate = ({
   image,
-  title,
+  photos,
   heading,
-  subheading,
   mainpitch,
   description,
   intro,
 }) => (
   <div>
-    <div className="margin-top-0">
+    <div className="margin-top-52">
       <img
         src={`${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -25,6 +28,23 @@ export const IndexPageTemplate = ({
         style={{ width: "100vw" }}
       />
     </div>
+    <Swiper effect="fade">
+      {photos.map((el, i) => {
+        return (
+          <SwiperSlide key={i}>
+            <img
+              src={`${
+                !!el.image.childImageSharp
+                  ? el.image.childImageSharp.fluid.src
+                  : el.image
+              }`}
+              alt={el.text}
+              style={{ width: "100vw" }}
+            />
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -39,6 +59,17 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
+                <div className="column is-12">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    お知らせ
+                  </h3>
+                  <BlogRoll />
+                  <div className="column is-12 has-text-centered">
+                    <Link className="btn" to="/blog">
+                      もっと見る
+                    </Link>
+                  </div>
+                </div>
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -51,18 +82,7 @@ export const IndexPageTemplate = ({
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
+                      詳しく見る
                     </Link>
                   </div>
                 </div>
@@ -77,6 +97,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  photos: PropTypes.array,
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -94,9 +115,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
+        photos={frontmatter.photos}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -119,7 +139,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -127,8 +146,17 @@ export const pageQuery = graphql`
             }
           }
         }
+        photos {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          text
+        }
         heading
-        subheading
         mainpitch {
           title
           description
