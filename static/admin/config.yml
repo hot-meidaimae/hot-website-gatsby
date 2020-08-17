@@ -129,18 +129,44 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/pricing/index.md"
+        label: "料金"
+        name: "pricing"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "about-page",
+              default: "pricing-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Image, name: image, widget: image }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - {
+              label: 料金表,
+              name: servicePricing,
+              widget: list,
+              fields:
+                [
+                  { label: コース名, name: name, widget: string },
+                  { label: 個室席（税抜）, name: boothPrice, widget: string },
+                  {
+                    label: 個室席（税込）,
+                    name: boothPriceTax,
+                    widget: string,
+                  },
+                  {
+                    label: オープン席（税抜）,
+                    name: openPrice,
+                    widget: string,
+                  },
+                  {
+                    label: オープン席（税込）,
+                    name: openPriceTax,
+                    widget: string,
+                  },
+                ],
+            }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

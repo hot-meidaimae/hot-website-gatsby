@@ -45,46 +45,47 @@ export const IndexPageTemplate = ({
         );
       })}
     </Swiper>
+    <div
+      className="columns is-vcentered"
+      style={{
+        backgroundColor: "#f3f5f6",
+        textAlign: "center",
+        padding: "1rem",
+      }}
+    >
+      <div className="column" style={{ whiteSpace: "pre-line" }}>
+        <h1 className="title">{mainpitch.title}</h1>
+        <h3 className="subtitle">{mainpitch.description}</h3>
+      </div>
+    </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="content">
+              <div className="column is-12">
+                <h3 className="has-text-weight-semibold is-size-2">お知らせ</h3>
+                <BlogRoll />
+                <div className="column is-12 has-text-centered">
+                  <Link className="btn" to="/blog">
+                    もっと見る
+                  </Link>
                 </div>
+              </div>
+              <div className="columns">
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    お知らせ
+                    {heading}
                   </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      もっと見る
-                    </Link>
-                  </div>
+                  <p>{description}</p>
                 </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      詳しく見る
-                    </Link>
-                  </div>
+              </div>
+              <Features gridItems={intro.blurbs} />
+              <div className="columns">
+                <div className="column is-12 has-text-centered">
+                  <Link className="btn" to="/products">
+                    詳しく見る
+                  </Link>
                 </div>
               </div>
             </div>
