@@ -8,8 +8,9 @@ const PricingPagePreview = ({ entry, getAsset }) => {
     return (
       <PricingPageTemplate
         image={getAsset(data.image)}
+        title={data.title}
         description={data.description}
-        price={data.servicePricing}
+        pricing={data.servicePricing}
       />
     );
   } else {
