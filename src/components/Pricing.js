@@ -38,9 +38,10 @@ const Td = styled.td`
   color: #222457;
 `;
 
-const Num = styled.span`
-  font-size: 1.5em;
-`;
+// const Num = styled.span`
+//   font-size: 1.5em;
+// `;
+
 const Txt = styled.span`
   font-size: 0.5em;
 `;

@@ -60,10 +60,10 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/pricing">
-                料金・設備
+                料金
               </Link>
               <Link className="navbar-item" to="/floor">
-                席・ブース
+                席・設備
               </Link>
               <Link className="navbar-item" to="/search">
                 コミック検索
