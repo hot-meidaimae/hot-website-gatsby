@@ -43,7 +43,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               ほっとステーション明大前店
             </Link>
-            {/* Hamburger menu */}
+            {/* eslint-disable-next-line */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -70,9 +70,6 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/search">
                 新刊コミック
-              </Link>
-              <Link className="navbar-item" to="/game">
-                オンラインゲーム
               </Link>
               <Link className="navbar-item" to="/blog">
                 お知らせ

@@ -2,13 +2,44 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { EffectFade } from "swiper";
+import SwiperCore, { EffectFade, Autoplay } from "swiper";
+import styled from "styled-components";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
-SwiperCore.use([EffectFade]);
+SwiperCore.use([EffectFade, Autoplay]);
+
+const Logo = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  width: 50%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    top: 52px;
+    left: 0;
+    transform: translate(0);
+    border-radius: 0;
+  }
+`;
+
+const Slide = styled.div`
+  height: 100vh;
+  margin-top: -52px;
+  background-image: url(${(props) =>
+    !!props.el.image.childImageSharp
+      ? props.el.image.childImageSharp.fluid.src
+      : props.el.image});
+  background-size: cover;
+  background-position: center;
+`;
 
 export const IndexPageTemplate = ({
   image,
@@ -19,38 +50,36 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div className="margin-top-52">
+    <Logo>
       <img
         src={`${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         }`}
         alt="Logo"
-        style={{ width: "100vw" }}
       />
-    </div>
-    <Swiper effect="fade">
+    </Logo>
+    <Swiper
+      effect="fade"
+      loop={true}
+      speed={2000}
+      autoplay={{
+        delay: 6000,
+        disableOnInteraction: false,
+      }}
+    >
       {photos.map((el, i) => {
         return (
           <SwiperSlide key={i}>
-            <img
-              src={`${
-                !!el.image.childImageSharp
-                  ? el.image.childImageSharp.fluid.src
-                  : el.image
-              }`}
-              alt={el.text}
-              style={{ width: "100vw" }}
-            />
+            <Slide el={el} />
           </SwiperSlide>
         );
       })}
     </Swiper>
     <div
-      className="columns is-vcentered"
+      className="is-vcentered"
       style={{
         backgroundColor: "#f3f5f6",
         textAlign: "center",
-        padding: "1rem",
       }}
     >
       <div className="column" style={{ whiteSpace: "pre-line" }}>

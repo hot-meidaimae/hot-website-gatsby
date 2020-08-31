@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const Shadow = styled.div`
+const CardBox = styled.div`
   background-color: #fff;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   color: #4a4a4a;
+  transition: transform 0.2s;
+  transform: scale(1);
+  border-radius: 15px;
+  overflow: hidden;
 `;
 
 const CardImage = styled.img`
@@ -14,7 +18,7 @@ const CardImage = styled.img`
 `;
 
 const Card = (props) => (
-  <Shadow className="card">
+  <CardBox className="card">
     <div className="card-image">
       <CardImage
         src={
@@ -34,7 +38,7 @@ const Card = (props) => (
 
       <div className="content">{props.text}</div>
     </div>
-  </Shadow>
+  </CardBox>
 );
 
 export default Card;

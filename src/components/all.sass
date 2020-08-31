@@ -37,6 +37,7 @@ $black: #f3f5f6
   left: 50%
   right: 50%
   margin: 2em -50vw
+  margin-bottom: 0
   background-size: cover
   background-position: bottom
   display: flex
@@ -152,8 +153,14 @@ $menu-label-color: $white-ter
   width: 100%
   top: 0
 
-.navbar-item 
-  color: #fff;
+.navbar-item
+  transition: all .2s
+  &:link,
+  &:visited
+    color: #fff
+  &:hover,
+  &:active
+    color: $secondary !important
 
 .navbar-menu
   background-color: $primary
@@ -165,7 +172,11 @@ $menu-label-color: $white-ter
   color: black
 
 .social a
-  background-color: $primary
+  background-color: transparent
+
+footer.footer
+  background-color: darken($primary, 5%)
 
 body 
+  margin-top: 52px;
   font-family: 'M PLUS 1p', sans-serif;

@@ -1,8 +1,5 @@
 import React from "react";
-import styled from "styled-components";
 import Card from "./UI/Card";
-
-const Table = styled.div``;
 
 const Facility = (props) => (
   <>
