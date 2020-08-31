@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Autoplay } from "swiper";
+import circleLogo from "../img/HotStation_logo-min.png";
 import styled from "styled-components";
 
 import Layout from "../components/Layout";
@@ -22,11 +23,7 @@ const Logo = styled.div`
   width: 50%;
 
   @media (max-width: 600px) {
-    width: 100%;
-    top: 52px;
-    left: 0;
-    transform: translate(0);
-    border-radius: 0;
+    width: 60%;
   }
 `;
 
@@ -51,12 +48,15 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <Logo>
-      <img
-        src={`${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        }`}
-        alt="Logo"
-      />
+      <picture>
+        <source srcSet={circleLogo} media="(max-width:600px)" />
+        <img
+          src={`${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          }`}
+          alt="Logo"
+        />
+      </picture>
     </Logo>
     <Swiper
       effect="fade"
