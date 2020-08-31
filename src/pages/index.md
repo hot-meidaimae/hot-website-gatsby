@@ -7,6 +7,8 @@ photos:
     text: test
   - image: /img/DSC00735_h800-min.jpg
     text: test
+  - image: /img/DSC00754_h800-min.jpg
+    text: test
 heading: Great coffee with a conscience
 mainpitch:
   title: リニューアルオープンしました！！
