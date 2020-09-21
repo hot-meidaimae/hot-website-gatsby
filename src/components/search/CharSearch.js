@@ -38,6 +38,7 @@ const CharSearch = (props) => {
   const [result, setResult] = useState();
 
   useEffect(() => {
+    setResult(null);
     axios
       .get(
         "https://hot-meidaimae.com/laravel/public/api/" + props.mode + "index"
@@ -82,6 +83,19 @@ const CharSearch = (props) => {
     console.log(sortedResult);
   }
 
+  const authorResult = {};
+  if (props.mode === "author" && result) {
+    Object.keys(result).forEach((k) => {
+      const tmp = {};
+      result[k].forEach((el) => {
+        if (!(el.author in tmp)) tmp[el.author] = [];
+        tmp[el.author].push(el);
+      });
+      authorResult[k] = tmp;
+    });
+    console.log(authorResult);
+  }
+
   return (
     <Root>
       <Grid container spacing={3}>
@@ -97,17 +111,31 @@ const CharSearch = (props) => {
                       </AccordionSummary>
                       <AccordionDetails>
                         <ul>
-                          {result[el]
-                            .filter(
-                              (x, i, self) =>
-                                self.findIndex((el) => el.title === x.title) ===
-                                i
-                            )
-                            .map((el) => (
-                              <li key={el.title}>
-                                {el.title}*{el.shelf}
-                              </li>
-                            ))}
+                          {props.mode === "title"
+                            ? result[el]
+                                .filter(
+                                  (x, i, self) =>
+                                    self.findIndex(
+                                      (el) => el.title === x.title
+                                    ) === i
+                                )
+                                .map((el) => (
+                                  <li key={el.title}>
+                                    {el.title}*{el.shelf}
+                                  </li>
+                                ))
+                            : Object.keys(authorResult[el]).map((k) => (
+                                <li>
+                                  <b>{k}</b>
+                                  <ul>
+                                    {authorResult[el][k].map((el) => (
+                                      <li>
+                                        {el.title}*{el.shelf}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </li>
+                              ))}
                         </ul>
                       </AccordionDetails>
                     </Accordion>
