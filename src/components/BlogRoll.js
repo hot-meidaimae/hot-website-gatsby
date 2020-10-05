@@ -74,7 +74,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 200, truncate: true)
               id
               fields {
                 slug
@@ -82,7 +82,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "YYYY年MM月DD日")
                 featuredpost
                 featuredimage {
                   childImageSharp {

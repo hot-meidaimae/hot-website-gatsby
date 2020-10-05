@@ -9,7 +9,7 @@ photos:
     text: test
   - image: /img/DSC00754_h800-min.jpg
     text: test
-heading: Great coffee with a conscience
+heading: 静かで清潔なインターネット・コミックカフェです。
 mainpitch:
   title: リニューアルオープンしました！！
   description: |-
@@ -17,59 +17,22 @@ mainpitch:
     簡易宿泊できます！
     漫画大量入荷中です！
     席数を減らし、さらに四方に窓やドアがある物件の特性を生かし全力で換気して営業中です。
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+description: ほっとステーション明大前店は2019年に20周年を迎えました。
 intro:
-  blurbs:
-    - image: /img/floor_icon-96x96.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/book_icon-96x96.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+  - name: 静かで清潔な空間
+    text: |-
+      スタッフによる清掃が行き届いた静かで清潔な空間です。
+    image: /img/20200714_renewaldeveloped2.jpg
+  - name: 充実のドリンクバー
+    text: |-
+      飲むヨーグルト・１日分野菜ジュース・有機栽培コーヒーなど他店にはない充実のドリンクバーがございます。
+    image: /img/2020-01-21-001-scaled.jpg
+  - name: 漫画ポップ
+    text: |-
+      店内マンガ棚にはたくさんのスタッフ手作りポップがございます。
+    image: /img/2020-02-21-001-scaled.jpg
+  - name: 各種電子決済対応
+    text: |-
+      Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
+    image: /img/e-money.png
 ---

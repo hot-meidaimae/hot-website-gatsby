@@ -7,8 +7,9 @@ import circleLogo from "../img/HotStation_logo-min.png";
 import styled from "styled-components";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import ReadMore from "../components/home/ReadMore";
+import Facility from "../components/Facility";
 
 SwiperCore.use([EffectFade, Autoplay]);
 
@@ -25,6 +26,14 @@ const Logo = styled.div`
   @media (max-width: 600px) {
     width: 60%;
   }
+`;
+
+const ReadMoreDiv = styled.div`
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 `;
 
 const Slide = styled.div`
@@ -58,6 +67,9 @@ export const IndexPageTemplate = ({
         />
       </picture>
     </Logo>
+    <ReadMoreDiv>
+      <ReadMore />
+    </ReadMoreDiv>
     <Swiper
       effect="fade"
       loop={true}
@@ -107,14 +119,12 @@ export const IndexPageTemplate = ({
                     {heading}
                   </h3>
                   <p>{description}</p>
-                </div>
-              </div>
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/products">
-                    詳しく見る
-                  </Link>
+                  <Facility facility={intro} />
+                  <div className="column is-12 has-text-centered">
+                    <Link className="btn" to="/floor">
+                      もっと見る
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,18 +203,15 @@ export const pageQuery = graphql`
         }
         description
         intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+          name
+          text
+          image {
+            childImageSharp {
+              fluid(maxWidth: 512, quality: 64) {
+                ...GatsbyImageSharpFluid
               }
             }
-            text
           }
-          heading
-          description
         }
       }
     }
