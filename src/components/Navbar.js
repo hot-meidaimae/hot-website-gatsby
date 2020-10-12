@@ -1,6 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
-import twitter from "../img/social/twitter.svg";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import IconButton from "@material-ui/core/IconButton";
+import styled from "styled-components";
+
+const Icons = styled.div`
+  .MuiIconButton-colorPrimary {
+    color: #fff;
+  }
+`;
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -81,18 +91,38 @@ const Navbar = class extends React.Component {
                 アルバイト募集
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
+            <Icons className="navbar-end has-text-centered">
               <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                title="twitter"
+                href="https://twitter.com/hotmeidaimae"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon">
-                  <img src={twitter} alt="Twitter" />
-                </span>
+                <IconButton color="primary">
+                  <TwitterIcon />
+                </IconButton>
               </a>
-            </div>
+              <a
+                title="instagram"
+                href="https://www.instagram.com/hotmeidai/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconButton color="primary">
+                  <InstagramIcon />
+                </IconButton>
+              </a>
+              <a
+                title="facebook"
+                href="https://www.facebook.com/hotmeidaimae/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconButton color="primary">
+                  <FacebookIcon />
+                </IconButton>
+              </a>
+            </Icons>
           </div>
         </div>
       </nav>

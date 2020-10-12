@@ -8,6 +8,9 @@ description: |-
   会員の方はご利用金額の５％（１００円につき５円）ポイント還元いたします。
   ※ナイトパックが終日使えるようになりました！
   ※途中外出可（一声おかけください）
+showerDescription: |-
+  ※シャンプー・リンス・ボディーソープ込
+  ※シャワーのみでもフリードリンク付き！
 
 servicePricing:
   - name: |-
@@ -58,4 +61,23 @@ servicePricing:
     boothPriceTax: 80
     openPrice: 73
     openPriceTax: 80
+showerPricing:
+  - name: |-
+      当店利用時30分
+    price: 300
+  - name: |-
+      シャワーのみ30分
+    price: 590
+  - name: |-
+      各延長10分
+    price: 80
+  - name: |-
+      フェイスタオル
+    price: 100
+  - name: |-
+      バスタオル
+    price: 300
+  - name: |-
+      ボディースポンジ
+    price: 50
 ---

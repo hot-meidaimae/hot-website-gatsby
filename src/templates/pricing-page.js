@@ -1,9 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Pricing from "../components/Pricing";
+import ServicePricing from "../components/Pricing";
+import ShowerPricing from "../components/PricingShower";
 
-export const PricingPageTemplate = ({ title, image, pricing, description }) => {
+export const PricingPageTemplate = ({
+  title,
+  image,
+  servicePricing,
+  showerPricing,
+  description,
+  showerDescription,
+}) => {
   return (
     <div className="content">
       <div
@@ -30,7 +38,14 @@ export const PricingPageTemplate = ({ title, image, pricing, description }) => {
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Pricing pricing={pricing} description={description} />
+              <ServicePricing
+                pricing={servicePricing}
+                description={description}
+              />
+              <ShowerPricing
+                pricing={showerPricing}
+                description={showerDescription}
+              />
             </div>
           </div>
         </div>
@@ -47,8 +62,10 @@ const PricingPage = ({ data }) => {
       <PricingPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
-        pricing={frontmatter.servicePricing}
+        servicePricing={frontmatter.servicePricing}
+        showerPricing={frontmatter.showerPricing}
         description={frontmatter.description}
+        showerDescription={frontmatter.showerDescription}
       />
     </Layout>
   );
@@ -69,12 +86,17 @@ export const pricingPageQuery = graphql`
           }
         }
         description
+        showerDescription
         servicePricing {
           name
           boothPrice
           boothPriceTax
           openPrice
           openPriceTax
+        }
+        showerPricing {
+          name
+          price
         }
       }
     }
