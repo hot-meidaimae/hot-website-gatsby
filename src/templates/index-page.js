@@ -174,11 +174,9 @@ export const pageQuery = graphql`
           }
         }
         photos {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1024, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
+          childImageSharp {
+            fluid(maxWidth: 1024, quality: 64) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
