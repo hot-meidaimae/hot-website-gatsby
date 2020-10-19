@@ -19,6 +19,7 @@ export const SearchPageTemplate = ({
   image,
   description,
   floorMapImage,
+  magazines,
 }) => {
   const [value, setValue] = useState(0);
   return (
@@ -65,6 +66,7 @@ export const SearchPageTemplate = ({
                 <CharSearch
                   floorMapImage={floorMapImage}
                   mode={value === 0 ? "title" : "author"}
+                  magazines={magazines}
                 />
               </Box>
             </div>
@@ -85,6 +87,7 @@ const SearchPage = ({ data }) => {
         image={frontmatter.image}
         description={frontmatter.description}
         floorMapImage={frontmatter.floorMapImage}
+        magazines={frontmatter.magazines}
       />
     </Layout>
   );
@@ -112,6 +115,7 @@ export const searchPageQuery = graphql`
             }
           }
         }
+        magazines
       }
     }
   }

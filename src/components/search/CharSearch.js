@@ -34,6 +34,15 @@ const Root = styled.div`
   }
 `;
 
+const Magazine = styled.div`
+  white-space: pre-line;
+`
+
+const Img = styled.img`
+  height: 100%;
+  width: 100%;
+`
+
 const CharSearch = (props) => {
   const [result, setResult] = useState();
 
@@ -104,6 +113,18 @@ const CharSearch = (props) => {
             <>
               <Grid item xs={12} sm={6} md={4}>
                 <div>
+                  {index === 0 ?
+                  <Accordion>
+                      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                        雑誌
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Magazine>
+                        {props.magazines}
+                        </Magazine>
+                      </AccordionDetails>
+                    </Accordion>
+                     : null}
                   {Object.keys(el).map((el) => (
                     <Accordion>
                       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -143,7 +164,7 @@ const CharSearch = (props) => {
                 </div>
               </Grid>
               {(index === 2 || index === 5 || index === 9) && (
-                <img
+                <Img
                   src={
                     !!props.floorMapImage.childImageSharp
                       ? props.floorMapImage.childImageSharp.fluid.src

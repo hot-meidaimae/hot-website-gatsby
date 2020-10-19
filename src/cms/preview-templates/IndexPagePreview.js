@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { IndexPageTemplate } from "../../templates/index-page";
 
 const IndexPagePreview = ({ entry, getAsset }) => {
@@ -9,23 +8,16 @@ const IndexPagePreview = ({ entry, getAsset }) => {
     return (
       <IndexPageTemplate
         image={getAsset(data.image)}
-        photos={data.photos}
+        photos={getAsset(data.photos)}
         heading={data.heading}
+        mainpitch={data.mainpitch}
         description={data.description}
-        intro={data.intro || { blurbs: [] }}
-        mainpitch={data.mainpitch || {}}
+        intro={data.intro}
       />
     );
   } else {
     return <div>Loading...</div>;
   }
-};
-
-IndexPagePreview.propTypes = {
-  entry: PropTypes.shape({
-    getIn: PropTypes.func,
-  }),
-  getAsset: PropTypes.func,
 };
 
 export default IndexPagePreview;

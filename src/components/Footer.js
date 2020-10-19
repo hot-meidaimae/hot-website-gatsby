@@ -9,6 +9,8 @@ import styled from "styled-components";
 import logo from "../img/HotStation_logo-min.png";
 
 const Icons = styled.div`
+  text-align: center;
+  
   .MuiIconButton-colorPrimary {
     color: #fff;
   }

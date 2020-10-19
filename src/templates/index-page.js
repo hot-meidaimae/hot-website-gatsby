@@ -135,19 +135,6 @@ export const IndexPageTemplate = ({
   </div>
 );
 
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  photos: PropTypes.array,
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-};
-
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
