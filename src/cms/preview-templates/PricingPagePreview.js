@@ -9,9 +9,11 @@ const PricingPagePreview = ({ entry, getAsset }) => {
       <PricingPageTemplate
         image={getAsset(data.image)}
         title={data.title}
+        servicePricing={data.servicePricing}
+        showerPricing={data.showerPricing}
         description={data.description}
-        pricing={data.servicePricing}
-      />
+        showerDescription={data.showerDescription}
+      /> 
     );
   } else {
     return <div>Loading...</div>;

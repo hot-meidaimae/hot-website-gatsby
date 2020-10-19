@@ -4,11 +4,8 @@ title: ほっとステーション明大前店
 image: /img/logo.jpg
 photos:
   - image: /img/20200714_renewaldeveloped2.jpg
-    text: test
   - image: /img/DSC00735_h800-min.jpg
-    text: test
   - image: /img/DSC00754_h800-min.jpg
-    text: test
 heading: 静かで清潔なインターネット・コミックカフェです。
 mainpitch:
   title: リニューアルオープンしました！！

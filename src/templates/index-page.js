@@ -40,9 +40,9 @@ const Slide = styled.div`
   height: 100vh;
   margin-top: -52px;
   background-image: url(${(props) =>
-    !!props.el.image.childImageSharp
-      ? props.el.image.childImageSharp.fluid.src
-      : props.el.image});
+    !!props.el.childImageSharp
+      ? props.el.childImageSharp.fluid.src
+      : props.el});
   background-size: cover;
   background-position: center;
 `;
@@ -181,7 +181,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          text
         }
         heading
         mainpitch {
