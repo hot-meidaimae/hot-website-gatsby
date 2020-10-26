@@ -47,16 +47,7 @@ collections:
             }
           - { label: タイトル, name: title, widget: string }
           - { label: 画像, name: image, widget: image }
-          - {
-              label: スライドショー画像,
-              name: photos,
-              widget: list,
-              fields:
-                [
-                  { label: 画像, name: image, widget: image },
-                  { label: テキスト, name: text, widget: text },
-                ],
-            }
+          - { label: スライドショー画像, name: photos, widget: list }
           - {
               label: 見出し文,
               name: mainpitch,
@@ -129,3 +120,39 @@ collections:
                 ],
             }
           - { label: シャワー説明, name: showerDescription, widget: text }
+      - file: "src/pages/floor/index.md"
+        label: "席・ブース"
+        name: "floor"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "floor-page",
+            }
+          - { label: 画像, name: image, widget: image }
+          - { label: タイトル, name: title, widget: string }
+          - { label: 説明文, name: description, widget: text }
+          - { label: 店内マップ, name: floorMapImage, widget: image }
+          - {
+              label: 席情報,
+              name: seats,
+              widget: list,
+              fields:
+                [
+                  { label: 席名, name: name, widget: string },
+                  { label: 説明文, name: text, widget: text },
+                  { label: 画像, name: image, widget: image },
+                ],
+            }
+          - {
+              label: 設備情報,
+              name: facility,
+              widget: list,
+              fields:
+                [
+                  { label: 設備名, name: name, widget: string },
+                  { label: 説明文, name: text, widget: text },
+                  { label: 画像, name: image, widget: image },
+                ],
+            }
