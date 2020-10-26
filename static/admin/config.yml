@@ -156,3 +156,45 @@ collections:
                   { label: 画像, name: image, widget: image },
                 ],
             }
+      - file: "src/pages/search/index.md"
+        label: "コミック検索"
+        name: "search"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "search-page",
+            }
+          - { label: 画像, name: image, widget: image }
+          - { label: タイトル, name: title, widget: string }
+          - { label: 説明文, name: description, widget: text }
+          - { label: フロアマップ, name: floorMapImage, widget: image }
+          - { label: 雑誌情報, name: magazines, widget: text }
+      - file: "src/pages/access/index.md"
+        label: "アクセス"
+        name: "access"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "access-page",
+            }
+          - { label: 画像, name: image, widget: image }
+          - { label: タイトル, name: title, widget: string }
+          - { label: 説明文, name: description, widget: text }
+          - { label: 参考写真, name: accessImage, widget: image }
+      - file: "src/pages/recruit/index.md"
+        label: "アルバイト募集"
+        name: "recruit"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "recruit-page",
+            }
+          - { label: 画像, name: image, widget: image }
+          - { label: タイトル, name: title, widget: string }
+          - { label: 説明文, name: description, widget: text }
