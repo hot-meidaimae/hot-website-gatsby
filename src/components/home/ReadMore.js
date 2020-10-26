@@ -9,12 +9,6 @@ const Root = styled.div`
     padding: 10px;
     background-color: #15116f;
     border-radius: 100px;
-
-    animation: fadeInUp;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-
     font-size: 1.1rem;
   }
 `;
