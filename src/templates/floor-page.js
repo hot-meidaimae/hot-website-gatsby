@@ -1,6 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import Img from "gatsby-image"
+
 import Layout from "../components/Layout";
 import Seats from "../components/Seats";
 import Facility from "../components/Facility";
@@ -44,14 +46,7 @@ export const FloorPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <PreLine>{description}</PreLine>
-              <img
-                src={
-                  !!floorMapImage.childImageSharp
-                    ? floorMapImage.childImageSharp.fluid.src
-                    : floorMapImage
-                }
-                alt="floorMap"
-              />
+              <Img fluid={floorMapImage.childImageSharp.fluid} />
               <Seats seats={seats} />
               <h2>設備のご案内</h2>
               <Facility facility={facility} />

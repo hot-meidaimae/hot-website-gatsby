@@ -6,6 +6,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Grid from "@material-ui/core/Grid";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import styled from "styled-components";
+import Img from "gatsby-image"
 
 const Root = styled.div`
   .MuiButtonBase-root {
@@ -38,9 +39,9 @@ const Magazine = styled.div`
   white-space: pre-line;
 `
 
-const Img = styled.img`
-  height: 100%;
+const ImageContainer = styled.div`
   width: 100%;
+  height: 100%;
 `
 
 const CharSearch = (props) => {
@@ -164,14 +165,9 @@ const CharSearch = (props) => {
                 </div>
               </Grid>
               {(index === 2 || index === 5 || index === 9) && (
-                <Img
-                  src={
-                    !!props.floorMapImage.childImageSharp
-                      ? props.floorMapImage.childImageSharp.fluid.src
-                      : props.floorMapImage
-                  }
-                  alt="floorMap"
-                />
+                <ImageContainer>
+                  <Img fluid={props.floorMapImage.childImageSharp.fluid} />
+                </ImageContainer>
               )}
             </>
           ))
