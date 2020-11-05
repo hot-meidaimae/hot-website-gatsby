@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Img from "gatsby-image"
 
 const CardBox = styled.div`
   background-color: #fff;
@@ -11,23 +12,10 @@ const CardBox = styled.div`
   overflow: hidden;
 `;
 
-const CardImage = styled.img`
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-`;
-
 const Card = (props) => (
   <CardBox className="card">
     <div className="card-image">
-      <CardImage
-        src={
-          !!props.image.childImageSharp
-            ? props.image.childImageSharp.fluid.src
-            : props.image
-        }
-        alt="Card"
-      />
+      <Img fluid={props.image.childImageSharp.fluid} />
     </div>
     <div className="card-content">
       <div className="media">
