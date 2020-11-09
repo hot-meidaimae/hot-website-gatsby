@@ -1,7 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import Img from "gatsby-image"
+
 import Layout from "../components/Layout";
+
 const PreLine = styled.p`
   white-space: pre-line;
 `;
@@ -40,6 +43,7 @@ export const AccessPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <PreLine>{description}</PreLine>
               <iframe
+                title="ほっとステーション明大前店マップ"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.313661728085!2d139.64838431525857!3d35.669277980197045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f307819de791%3A0x8ec639cb17f07b30!2z44G744Gj44Go44K544OG44O844K344On44OzIOaYjuWkp-WJjeW6lw!5e0!3m2!1sja!2sjp!4v1601306926519!5m2!1sja!2sjp"
                 width="100%"
                 height="500"
@@ -47,14 +51,7 @@ export const AccessPageTemplate = ({
                 allowfullscreen=""
                 aria-hidden="false"
               ></iframe>
-              <img
-                src={
-                  !!accessImage.childImageSharp
-                    ? accessImage.childImageSharp.fluid.src
-                    : accessImage
-                }
-                alt="stationAccessImage"
-              />
+              <Img fluid={accessImage.childImageSharp.fluid} />
             </div>
           </div>
         </div>
