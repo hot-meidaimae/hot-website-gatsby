@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Autoplay } from "swiper";
 import circleLogo from "../img/HotStation_logo-min.png";
 import styled from "styled-components";
+import Img from "gatsby-image"
 
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
@@ -39,12 +40,6 @@ const ReadMoreDiv = styled.div`
 const Slide = styled.div`
   height: 100vh;
   margin-top: -52px;
-  background-image: url(${(props) =>
-    !!props.el.childImageSharp
-      ? props.el.childImageSharp.fluid.src
-      : props.el});
-  background-size: cover;
-  background-position: center;
 `;
 
 export const IndexPageTemplate = ({
@@ -82,7 +77,9 @@ export const IndexPageTemplate = ({
       {photos.map((el, i) => {
         return (
           <SwiperSlide key={i}>
-            <Slide el={el} />
+            <Slide>
+              <Img fluid={el.childImageSharp.fluid} style={{height: "100%"}} imgStyle={{objectFit: "cover", objectPosition: "50% 50%"}} />
+            </Slide>
           </SwiperSlide>
         );
       })}
