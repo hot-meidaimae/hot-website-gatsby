@@ -33,7 +33,7 @@ const KeywordSearch = (props) => {
     // console.log(event.target[0].value);
     axios
       .get(
-        "https://hot-meidaimae.com/laravel/public/api/search?key_type=both&keyword=" +
+        "https://laravel.hot-meidaimae.com/api/search?key_type=both&keyword=" +
           event.target[0].value
       )
       .then((res) => {

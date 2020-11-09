@@ -51,7 +51,7 @@ const CharSearch = (props) => {
     setResult(null);
     axios
       .get(
-        "https://hot-meidaimae.com/laravel/public/api/" + props.mode + "index"
+        "https://laravel.hot-meidaimae.com/api/" + props.mode + "index"
       )
       .then((res) => {
         console.log(res);
