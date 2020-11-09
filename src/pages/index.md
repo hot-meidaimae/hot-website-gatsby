@@ -3,9 +3,9 @@ templateKey: index-page
 title: ほっとステーション明大前店
 image: /img/logo.jpg
 photos:
-  - /img/DSC00754_h800-min.jpg
   - /img/20200714_renewaldeveloped2.jpg
   - /img/DSC00735_h800-min.jpg
+  - /img/DSC00754_h800-min.jpg
 mainpitch:
   title: リニューアルオープンしました！！
   description: |-
