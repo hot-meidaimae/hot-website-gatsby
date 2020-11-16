@@ -9,6 +9,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import KeywordSearch from "../components/search/KeywordSearch";
 import CharSearch from "../components/search/CharSearch";
+import MapDialog from "../components/search/MapDialog";
 
 const Box = styled.div`
   margin-top: 1rem;
@@ -72,6 +73,7 @@ export const SearchPageTemplate = ({
             </div>
           </div>
         </div>
+        <MapDialog floorMapImage={floorMapImage} />
       </section>
     </div>
   );
