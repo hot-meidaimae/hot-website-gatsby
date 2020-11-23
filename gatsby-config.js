@@ -5,6 +5,13 @@ module.exports = {
       "静かで清潔なインターネット・コミックカフェ「ほっとステーション明大前店」の公式ウェブサイトです。",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-SBTEQHH9G6",
+        head: true,
+      }
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     {
@@ -72,13 +79,7 @@ module.exports = {
         purgeOnly: ["/all.sass"], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "G-SBTEQHH9G6",
-      }
-    },
+    `gatsby-plugin-styled-components`,\
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
