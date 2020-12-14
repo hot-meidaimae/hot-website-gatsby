@@ -2,7 +2,7 @@
 templateKey: "blog-post"
 title: "ほっとちゃん通信2020秋"
 date: 2020-09-01
-featuredpost: true
+featuredpost: false
 featuredimage: /img/hotchan/hot202009.jpg
 description: >-
   ほっとちゃん通信2020秋バージョンを公開しました！
