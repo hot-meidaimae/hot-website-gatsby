@@ -24,7 +24,7 @@ intro:
     image: /img/2020-01-21-001-scaled.jpg
   - name: 漫画ポップ
     text: 店内マンガ棚にはたくさんのスタッフ手作りポップがございます。
-    image: /img/2020-02-21-001-scaled.jpg
+    image: /img/f295c411-5603-482e-8fc9-2266bf28c3c5.jpg
   - name: 各種電子決済対応
     text: Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
     image: /img/e-money.png
