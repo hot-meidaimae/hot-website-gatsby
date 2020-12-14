@@ -2,7 +2,7 @@
 templateKey: "pricing-page"
 path: /pricing
 title: 料金
-image: /img/DSC00754_h800-min.jpg
+image: /img/DSC00754_h800.jpg
 description: |-
   会員登録は無料。PC利用なければ会員登録なしでもご利用いただけます。
   会員の方はご利用金額の５％（１００円につき５円）ポイント還元いたします。

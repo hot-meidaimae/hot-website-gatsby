@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/Layout";
 import Seats from "../components/Seats";
@@ -21,13 +22,9 @@ export const FloorPageTemplate = ({
 }) => {
   return (
     <div className="content">
-      <div
+      <BackgroundImage
         className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-        }}
+        fluid={image.childImageSharp.fluid}
       >
         <h2
           className="has-text-weight-bold is-size-1"
@@ -40,7 +37,7 @@ export const FloorPageTemplate = ({
         >
           {title}
         </h2>
-      </div>
+      </BackgroundImage>
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">

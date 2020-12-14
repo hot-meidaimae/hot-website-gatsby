@@ -5,6 +5,7 @@ import Tab from "@material-ui/core/Tab";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import PersonIcon from "@material-ui/icons/Person";
 import styled from "styled-components";
+import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/Layout";
 import KeywordSearch from "../components/search/KeywordSearch";
@@ -25,13 +26,9 @@ export const SearchPageTemplate = ({
   const [value, setValue] = useState(0);
   return (
     <div className="content">
-      <div
+      <BackgroundImage
         className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-        }}
+        fluid={image.childImageSharp.fluid}
       >
         <h2
           className="has-text-weight-bold is-size-1"
@@ -44,7 +41,7 @@ export const SearchPageTemplate = ({
         >
           {title}
         </h2>
-      </div>
+      </BackgroundImage>
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">

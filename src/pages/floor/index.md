@@ -2,7 +2,7 @@
 templateKey: "floor-page"
 path: /floor
 title: 席・設備
-image: /img/DSC00754_h800-min.jpg
+image: /img/DSC00754_h800.jpg
 description: |-
   お席のご案内です。
   全席禁煙（喫煙所あり）となっております。

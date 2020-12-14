@@ -165,14 +165,14 @@ export const pageQuery = graphql`
       frontmatter {
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 64) {
+            fluid(maxWidth: 2048) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         photos {
           childImageSharp {
-            fluid(maxWidth: 1024, quality: 64) {
+            fluid(maxWidth: 1024) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -188,7 +188,7 @@ export const pageQuery = graphql`
           text
           image {
             childImageSharp {
-              fluid(maxWidth: 512, quality: 64) {
+              fluid(maxWidth: 512) {
                 ...GatsbyImageSharpFluid
               }
             }

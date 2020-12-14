@@ -1,6 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import BackgroundImage from 'gatsby-background-image'
+
 import Layout from "../components/Layout";
 
 const PreLine = styled.p`
@@ -10,14 +12,9 @@ const PreLine = styled.p`
 export const RecruitPageTemplate = ({ title, image, description }) => {
   return (
     <div className="content">
-      <div
+      <BackgroundImage
         className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: "center",
-        }}
+        fluid={image.childImageSharp.fluid}
       >
         <h2
           className="has-text-weight-bold is-size-1"
@@ -30,7 +27,7 @@ export const RecruitPageTemplate = ({ title, image, description }) => {
         >
           {title}
         </h2>
-      </div>
+      </BackgroundImage>
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
