@@ -1,17 +1,13 @@
 ---
-templateKey: "pricing-page"
+templateKey: pricing-page
 path: /pricing
+image: /img/11957ced-40ac-47f3-87d2-237238fc5835.jpg
 title: 料金
-image: /img/DSC00754_h800.jpg
 description: |-
   会員登録は無料。PC利用なければ会員登録なしでもご利用いただけます。
   会員の方はご利用金額の５％（１００円につき５円）ポイント還元いたします。
   ※ナイトパックが終日使えるようになりました！
   ※途中外出可（一声おかけください）
-showerDescription: |-
-  ※シャンプー・リンス・ボディーソープ込
-  ※シャワーのみでもフリードリンク付き！
-
 servicePricing:
   - name: |-
       基本料金コース
@@ -55,29 +51,25 @@ servicePricing:
     boothPriceTax: 2000
     openPrice: 2546
     openPriceTax: 2800
-  - name: |-
-      各延長10分
+  - name: 各延長10分
     boothPrice: 73
     boothPriceTax: 80
     openPrice: 73
     openPriceTax: 80
 showerPricing:
-  - name: |-
-      当店利用時30分
+  - name: 当店利用時30分
     price: 300
-  - name: |-
-      シャワーのみ30分
+  - name: シャワーのみ30分
     price: 590
-  - name: |-
-      各延長10分
+  - name: 各延長10分
     price: 80
-  - name: |-
-      フェイスタオル
+  - name: フェイスタオル
     price: 100
-  - name: |-
-      バスタオル
+  - name: バスタオル
     price: 300
-  - name: |-
-      ボディースポンジ
+  - name: ボディースポンジ
     price: 50
+showerDescription: |-
+  ※シャンプー・リンス・ボディーソープ込
+  ※シャワーのみでもフリードリンク付き！
 ---
