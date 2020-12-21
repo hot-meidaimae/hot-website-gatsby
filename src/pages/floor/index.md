@@ -1,7 +1,7 @@
 ---
 templateKey: floor-page
 path: /floor
-image: /img/img053-2-.jpg
+image: /img/floor_icon-96x96.png
 title: 席・設備
 description: |-
   お席のご案内です。
