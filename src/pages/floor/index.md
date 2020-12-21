@@ -1,7 +1,7 @@
 ---
 templateKey: floor-page
 path: /floor
-image: https://ucarecdn.com/0b172061-e0c4-4db6-8c39-c026fbafbe2b/
+image: /img/img053-2-.jpg
 title: 席・設備
 description: |-
   お席のご案内です。
