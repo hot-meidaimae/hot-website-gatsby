@@ -10,6 +10,10 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 4c411270a33525bd99c5
 
 collections:
   - name: "お知らせ"
