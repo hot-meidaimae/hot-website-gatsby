@@ -1,7 +1,7 @@
 ---
 templateKey: pricing-page
 path: /pricing
-image: /img/11957ced-40ac-47f3-87d2-237238fc5835.jpg
+image: /img/hotstation_logo-min.png
 title: 料金
 description: |-
   会員登録は無料。PC利用なければ会員登録なしでもご利用いただけます。
