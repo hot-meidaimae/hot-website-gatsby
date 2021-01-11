@@ -4,8 +4,6 @@ import styled from "styled-components";
 import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
-import Layout from "../components/Layout";
-
 const PreLine = styled.p`
   white-space: pre-line;
 `;
@@ -58,14 +56,14 @@ const AccessPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <>
       <AccessPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
         accessImage={frontmatter.accessImage}
         description={frontmatter.description}
       />
-    </Layout>
+    </>
   );
 };
 export default AccessPage;

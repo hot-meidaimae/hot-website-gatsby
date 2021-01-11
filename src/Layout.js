@@ -1,17 +1,19 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import "./all.scss";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "swiper/components/effect-fade/effect-fade.scss";
-import useSiteMetadata from "./SiteMetadata";
+import useSiteMetadata from "./components/SiteMetadata";
 import { withPrefix } from "gatsby";
 
-const TemplateWrapper = ({ children }) => {
+import Transition from "./utils/Transition"
+
+const TemplateWrapper = ({ children, location  }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -58,7 +60,9 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <Transition location={location}>
+      {children}
+      </Transition>
       <Footer />
     </div>
   );

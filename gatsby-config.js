@@ -81,6 +81,12 @@ module.exports = {
     //   },
     // }, // must be after other CSS plugins
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/Layout`),
+      },
+    },
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };

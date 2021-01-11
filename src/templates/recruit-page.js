@@ -3,8 +3,6 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'
 
-import Layout from "../components/Layout";
-
 const PreLine = styled.p`
   white-space: pre-line;
 `;
@@ -45,13 +43,13 @@ const RecruitPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <>
       <RecruitPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
         description={frontmatter.description}
       />
-    </Layout>
+    </>
   );
 };
 export default RecruitPage;

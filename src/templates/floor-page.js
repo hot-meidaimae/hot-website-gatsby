@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
-import Layout from "../components/Layout";
 import Seats from "../components/Seats";
 import Facility from "../components/Facility";
 
@@ -59,7 +58,7 @@ const FloorPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <>
       <FloorPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
@@ -68,7 +67,7 @@ const FloorPage = ({ data }) => {
         seats={frontmatter.seats}
         facility={frontmatter.facility}
       />
-    </Layout>
+    </>
   );
 };
 export default FloorPage;

@@ -7,7 +7,6 @@ import PersonIcon from "@material-ui/icons/Person";
 import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'
 
-import Layout from "../components/Layout";
 import KeywordSearch from "../components/search/KeywordSearch";
 import CharSearch from "../components/search/CharSearch";
 import MapDialog from "../components/search/MapDialog";
@@ -80,7 +79,7 @@ const SearchPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <>
       <SearchPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
@@ -88,7 +87,7 @@ const SearchPage = ({ data }) => {
         floorMapImage={frontmatter.floorMapImage}
         magazines={frontmatter.magazines}
       />
-    </Layout>
+    </>
   );
 };
 export default SearchPage;

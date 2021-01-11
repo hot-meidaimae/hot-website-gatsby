@@ -7,7 +7,6 @@ import circleLogo from "../img/HotStation_logo-min.png";
 import styled from "styled-components";
 import Img from "gatsby-image"
 
-import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import ReadMore from "../components/home/ReadMore";
 import Facility from "../components/Facility";
@@ -136,7 +135,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <>
       <IndexPageTemplate
         image={frontmatter.image}
         photos={frontmatter.photos}
@@ -145,7 +144,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
-    </Layout>
+    </>
   );
 };
 

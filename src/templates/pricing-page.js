@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import BackgroundImage from 'gatsby-background-image'
 
-import Layout from "../components/Layout";
 import ServicePricing from "../components/Pricing";
 import ShowerPricing from "../components/PricingShower";
 
@@ -56,7 +55,7 @@ const PricingPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <>
       <PricingPageTemplate
         title={frontmatter.title}
         image={frontmatter.image}
@@ -65,7 +64,7 @@ const PricingPage = ({ data }) => {
         description={frontmatter.description}
         showerDescription={frontmatter.showerDescription}
       />
-    </Layout>
+    </>
   );
 };
 export default PricingPage;
