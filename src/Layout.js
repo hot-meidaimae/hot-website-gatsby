@@ -59,7 +59,7 @@ const TemplateWrapper = ({ children, location  }) => {
           rel="stylesheet"
         />
       </Helmet>
-      <Navbar />
+      <Navbar location={location} />
       <Transition location={location}>
       {children}
       </Transition>
