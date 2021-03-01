@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import { node } from "prop-types";
 
 const BlogRoll = () => {
   const data = useStaticQuery(graphql`

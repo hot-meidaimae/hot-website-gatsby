@@ -1,0 +1,29 @@
+.Logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  width: 50%;
+}
+
+.ReadMore {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.Slide {
+  height: 100vh;
+  margin-top: -52px;
+}
+
+@media (max-width: 600px) {
+  .Logo {
+    width: 60%;
+  }
+}

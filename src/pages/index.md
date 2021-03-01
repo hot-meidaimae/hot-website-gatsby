@@ -1,5 +1,6 @@
 ---
 templateKey: index-page
+tsx: true
 title: ほっとステーション明大前店
 image: /img/logo.jpg
 photos:

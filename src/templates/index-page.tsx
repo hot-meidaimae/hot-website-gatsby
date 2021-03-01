@@ -1,47 +1,34 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Autoplay } from "swiper";
 import circleLogo from "../img/HotStation_logo-min.png";
-import styled from "styled-components";
-import Img from "gatsby-image"
+import Img, { FluidObject } from "gatsby-image";
 
 import BlogRoll from "../components/BlogRoll";
 import ReadMore from "../components/home/ReadMore";
 import Facility from "../components/Facility";
+import classes from "./index-page.module.scss";
 
 SwiperCore.use([EffectFade, Autoplay]);
 
-const Logo = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 10;
-  width: 50%;
+type TemplateProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: Props;
+    };
+  };
+};
+type Props = {
+  image: { childImageSharp: { fluid: FluidObject } };
+  photos: { childImageSharp: { fluid: FluidObject } }[];
+  heading: string;
+  mainpitch: { title: string; description: string };
+  description: string;
+  intro: string;
+};
 
-  @media (max-width: 600px) {
-    width: 60%;
-  }
-`;
-
-const ReadMoreDiv = styled.div`
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-`;
-
-const Slide = styled.div`
-  height: 100vh;
-  margin-top: -52px;
-`;
-
-export const IndexPageTemplate = ({
+export const IndexPageTemplate: React.FC<Props> = ({
   image,
   photos,
   heading,
@@ -50,7 +37,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <Logo>
+    <div className={classes.Logo}>
       <picture>
         <source srcSet={circleLogo} media="(max-width:600px)" />
         <img
@@ -60,10 +47,10 @@ export const IndexPageTemplate = ({
           alt="Logo"
         />
       </picture>
-    </Logo>
-    <ReadMoreDiv>
+    </div>
+    <div className={classes.ReadMore}>
       <ReadMore />
-    </ReadMoreDiv>
+    </div>
     <Swiper
       effect="fade"
       loop={true}
@@ -76,9 +63,13 @@ export const IndexPageTemplate = ({
       {photos.map((el, i) => {
         return (
           <SwiperSlide key={i}>
-            <Slide>
-              <Img fluid={el.childImageSharp.fluid} style={{height: "100%"}} imgStyle={{objectFit: "cover", objectPosition: "50% 50%"}} />
-            </Slide>
+            <div className={classes.Slide}>
+              <Img
+                fluid={el.childImageSharp.fluid}
+                style={{ height: "100%" }}
+                imgStyle={{ objectFit: "cover", objectPosition: "50% 50%" }}
+              />
+            </div>
           </SwiperSlide>
         );
       })}
@@ -131,7 +122,7 @@ export const IndexPageTemplate = ({
   </div>
 );
 
-const IndexPage = ({ data }) => {
+const IndexPage: React.FC<TemplateProps> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
@@ -146,14 +137,6 @@ const IndexPage = ({ data }) => {
       />
     </>
   );
-};
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 };
 
 export default IndexPage;

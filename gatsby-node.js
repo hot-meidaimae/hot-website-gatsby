@@ -25,6 +25,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               tags
               templateKey
+              tsx
             }
           }
         }
@@ -43,7 +44,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(
+        component: edge.node.frontmatter.tsx ? path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`
+        ) : path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
