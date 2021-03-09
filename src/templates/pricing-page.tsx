@@ -16,8 +16,17 @@ type TemplateProps = {
 type Props = {
   title: string;
   image: { childImageSharp: { fluid: FluidObject } };
-  servicePricing: number;
-  showerPricing: number;
+  servicePricing: {
+    name: string;
+    boothPrice: number;
+    boothPriceTax: number;
+    openPrice: number;
+    openPriceTax: number;
+  }[];
+  showerPricing: {
+    name: string;
+    price: number;
+  }[];
   description: string;
   showerDescription: string;
 };
