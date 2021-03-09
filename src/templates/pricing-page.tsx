@@ -1,11 +1,28 @@
 import React from "react";
 import { graphql } from "gatsby";
-import BackgroundImage from 'gatsby-background-image'
+import { FluidObject } from "gatsby-image";
+import BackgroundImage from "gatsby-background-image";
 
 import ServicePricing from "../components/Pricing";
 import ShowerPricing from "../components/PricingShower";
 
-export const PricingPageTemplate = ({
+type TemplateProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: Props;
+    };
+  };
+};
+type Props = {
+  title: string;
+  image: { childImageSharp: { fluid: FluidObject } };
+  servicePricing: number;
+  showerPricing: number;
+  description: string;
+  showerDescription: string;
+};
+
+export const PricingPageTemplate: React.FC<Props> = ({
   title,
   image,
   servicePricing,
@@ -51,7 +68,7 @@ export const PricingPageTemplate = ({
   );
 };
 
-const PricingPage = ({ data }) => {
+const PricingPage: React.FC<TemplateProps> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (

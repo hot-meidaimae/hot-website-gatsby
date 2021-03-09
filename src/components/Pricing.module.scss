@@ -1,0 +1,43 @@
+.Table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 0px;
+  margin-top: 1rem;
+}
+
+.Tbody {
+  color: #9e2236;
+}
+
+.Tr {
+  background-color: #fff;
+  padding: 0.35em;
+  border-bottom: 1px dotted #8bc34a;
+  &:last-child {
+    border-bottom: 2px solid #18521b;
+  }
+}
+
+.Th {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: #9e2236 !important;
+  border: 1px solid #d1d1d1 !important;
+  border-width: 1px !important;
+}
+
+.Td {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  text-align: center !important;
+  font-size: 1.5em;
+  border: 1px solid #d1d1d1 !important;
+  border-width: 1px !important;
+  color: #222457;
+}
+
+.Txt {
+  font-size: 0.5em;
+}
+
+.PreLine {
+  white-space: pre-line;
+}
