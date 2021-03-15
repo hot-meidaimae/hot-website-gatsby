@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { FluidObject } from "gatsby-image";
-import BackgroundImage from "gatsby-background-image";
 
+import PageTemplate from "./PageTemplate";
 import ServicePricing from "../components/Pricing";
 import ShowerPricing from "../components/PricingShower";
 
@@ -40,40 +40,10 @@ export const PricingPageTemplate: React.FC<Props> = ({
   showerDescription,
 }) => {
   return (
-    <div className="content">
-      <BackgroundImage
-        className="full-width-image-container margin-top-0"
-        fluid={image.childImageSharp.fluid}
-      >
-        <h2
-          className="has-text-weight-bold is-size-1"
-          style={{
-            boxShadow: "0.5rem 0 0 #222457, -0.5rem 0 0 #222457",
-            backgroundColor: "#222457",
-            color: "white",
-            padding: "1rem",
-          }}
-        >
-          {title}
-        </h2>
-      </BackgroundImage>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <ServicePricing
-                pricing={servicePricing}
-                description={description}
-              />
-              <ShowerPricing
-                pricing={showerPricing}
-                description={showerDescription}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <PageTemplate title={title} image={image}>
+      <ServicePricing pricing={servicePricing} description={description} />
+      <ShowerPricing pricing={showerPricing} description={showerDescription} />
+    </PageTemplate>
   );
 };
 
