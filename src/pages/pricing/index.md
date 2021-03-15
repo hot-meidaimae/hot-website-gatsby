@@ -1,5 +1,6 @@
 ---
 templateKey: pricing-page
+tsx: true
 path: /pricing
 image: /img/hotstation_logo-min.png
 title: 料金

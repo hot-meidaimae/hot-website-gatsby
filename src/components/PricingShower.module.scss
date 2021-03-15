@@ -1,0 +1,55 @@
+.Table {
+  border: 0;
+  margin-bottom: 0px;
+  font-family: "M PLUS 1P";
+  max-width: 400px;
+}
+
+.Tbody {
+  color: #9e2236;
+}
+
+.Tr {
+  display: block;
+  margin-bottom: 0em;
+  padding-bottom: 0px;
+  border-bottom: 2px solid #000;
+}
+
+.Th {
+  display: block;
+  border-right: none;
+  border-bottom: 2px solid #000 !important;
+  padding-top: 28px;
+  padding-bottom: 0.6em;
+  margin-bottom: 0px;
+  color: #9e2236 !important;
+}
+
+.Td {
+  border-bottom: 1px solid #bbb !important;
+  display: block;
+  font-size: 1.2em;
+  text-align: right !important;
+  position: relative;
+  padding: 0.625em 0.625em 0.625em 4em;
+  border-right: none;
+  color: #222457;
+  &::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.Txt {
+  font-size: 0.5em;
+}
+
+.PreLine {
+  white-space: pre-line;
+}
