@@ -81,7 +81,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/Layout`),
+        component: require.resolve(`./src/Layout.tsx`),
       },
     },
     "gatsby-plugin-netlify", // make sure to keep it last in the array

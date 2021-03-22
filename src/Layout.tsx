@@ -9,11 +9,9 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "swiper/components/effect-fade/effect-fade.scss";
 import useSiteMetadata from "./components/SiteMetadata";
-import { withPrefix } from "gatsby";
+import { withPrefix, PageProps } from "gatsby";
 
-import Transition from "./utils/Transition"
-
-const TemplateWrapper = ({ children, location  }) => {
+const TemplateWrapper: React.FC<PageProps> = ({ children, location }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -60,9 +58,7 @@ const TemplateWrapper = ({ children, location  }) => {
         />
       </Helmet>
       <Navbar location={location} />
-      <Transition location={location}>
       {children}
-      </Transition>
       <Footer />
     </div>
   );
