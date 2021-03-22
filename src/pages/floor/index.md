@@ -39,4 +39,12 @@ facility:
   - name: Wi-Fi
     text: Wi-Fi飛んでます。持ち込みのPCお使い頂けます。
     image: /img/text_wifi.png
+  - image: /img/pc_smartphone_battery_juuden.png
+    name: 各座席に電源完備！
+    text: |-
+      携帯電話・iphone・スマートフォン充電が無料でできます！
+      スマートフォン充電器の無料貸し出しも行っています。
+  - image: /img/food_cup_ramen_syouyu.png
+    name: 持ち込み歓迎！
+    text: コンビニで買ってきた食べ物などの持ち込みも大歓迎です！
 ---
