@@ -1,6 +1,5 @@
 ---
 templateKey: index-page
-tsx: true
 title: ほっとステーション明大前店
 image: /img/logo.jpg
 photos:
@@ -15,7 +14,7 @@ mainpitch:
     漫画大量入荷中です！
     席数を減らし、さらに四方に窓やドアがある物件の特性を生かし全力で換気して営業中です。
 heading: 静かで清潔なインターネット・コミックカフェです。
-description: ほっとステーション明大前店は2019年に20周年を迎えました。
+description: ほっとステーション明大前店は2021年に22周年を迎えました。
 intro:
   - name: 静かで清潔な空間
     text: スタッフによる清掃が行き届いた静かで清潔な空間です。
@@ -29,4 +28,5 @@ intro:
   - name: 各種電子決済対応
     text: Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
     image: /img/e-money.png
+tsx: true
 ---
