@@ -1,11 +1,10 @@
 ---
-templateKey: "blog-post"
-title: "ほっとちゃん通信2020冬"
+templateKey: blog-post
+title: ほっとちゃん通信2020冬
 date: 2020-11-05
-featuredpost: true
+description: ほっとちゃん通信2020冬バージョンを公開しました！
+featuredpost: false
 featuredimage: /img/hotchan/hot202011.jpg
-description: >-
-  ほっとちゃん通信2020冬バージョンを公開しました！
 tags:
   - ほっとちゃん通信
 ---
