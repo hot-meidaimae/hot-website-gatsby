@@ -52,10 +52,6 @@ const TemplateWrapper: React.FC<PageProps> = ({ children, location }) => {
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
-          rel="stylesheet"
-        />
       </Helmet>
       <Navbar location={location} />
       {children}
