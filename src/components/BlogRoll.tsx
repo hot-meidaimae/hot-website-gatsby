@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-const BlogRoll = () => {
+const BlogRoll = ({ isTop }: { isTop: boolean }) => {
   const data = useStaticQuery(graphql`
     query BlogRollQuery {
       allMarkdownRemark(
@@ -43,7 +43,8 @@ const BlogRoll = () => {
         {posts &&
           posts
             .filter(
-              ({ node: post }: { node: any }) => post.frontmatter.featuredpost
+              ({ node: post }: { node: any }) =>
+                post.frontmatter.featuredpost || !isTop
             )
             .map(({ node: post }: { node: any }) => (
               <div className="is-parent column is-6" key={post.id}>

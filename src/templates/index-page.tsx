@@ -93,7 +93,7 @@ export const IndexPageTemplate: React.FC<Props> = ({
             <div className="content">
               <div className="column is-12">
                 <h3 className="has-text-weight-semibold is-size-2">お知らせ</h3>
-                <BlogRoll />
+                <BlogRoll isTop />
                 <div className="column is-12 has-text-centered">
                   <Link className="btn" to="/blog">
                     もっと見る
