@@ -1,17 +1,37 @@
 import React from "react";
 import { graphql } from "gatsby";
-import styled from "styled-components";
-import Img from "gatsby-image"
-import BackgroundImage from 'gatsby-background-image'
+import Img, { FluidObject } from "gatsby-image";
+import BackgroundImage from "gatsby-background-image";
 
 import Seats from "../components/Seats";
 import Facility from "../components/Facility";
+import classes from "./floor-page.module.scss";
 
-const PreLine = styled.p`
-  white-space: pre-line;
-`;
+type TemplateProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: Props;
+    };
+  };
+};
+type Props = {
+  title: string;
+  image: { childImageSharp: { fluid: FluidObject } };
+  floorMapImage: { childImageSharp: { fluid: FluidObject } };
+  description: string;
+  seats: {
+    name: string;
+    text: string;
+    image: { childImageSharp: { fluid: FluidObject } };
+  };
+  facility: {
+    name: string;
+    text: string;
+    image: { childImageSharp: { fluid: FluidObject } };
+  };
+};
 
-export const FloorPageTemplate = ({
+export const FloorPageTemplate: React.FC<Props> = ({
   title,
   image,
   floorMapImage,
@@ -41,7 +61,7 @@ export const FloorPageTemplate = ({
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <PreLine>{description}</PreLine>
+              <p className={classes.Description}>{description}</p>
               <Img fluid={floorMapImage.childImageSharp.fluid} />
               <Seats seats={seats} />
               <h2>設備のご案内</h2>
@@ -54,7 +74,7 @@ export const FloorPageTemplate = ({
   );
 };
 
-const FloorPage = ({ data }) => {
+const FloorPage: React.FC<TemplateProps> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
