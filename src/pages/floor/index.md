@@ -1,5 +1,6 @@
 ---
 templateKey: floor-page
+tsx: true
 path: /floor
 image: /img/37.png
 title: 席・設備

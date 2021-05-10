@@ -25,7 +25,11 @@ type Props = {
   heading: string;
   mainpitch: { title: string; description: string };
   description: string;
-  intro: string;
+  intro: {
+    name: string;
+    text: string;
+    image: { childImageSharp: { fluid: FluidObject } };
+  }[];
 };
 
 export const IndexPageTemplate: React.FC<Props> = ({

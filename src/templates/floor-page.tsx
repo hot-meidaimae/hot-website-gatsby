@@ -23,12 +23,12 @@ type Props = {
     name: string;
     text: string;
     image: { childImageSharp: { fluid: FluidObject } };
-  };
+  }[];
   facility: {
     name: string;
     text: string;
     image: { childImageSharp: { fluid: FluidObject } };
-  };
+  }[];
 };
 
 export const FloorPageTemplate: React.FC<Props> = ({

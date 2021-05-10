@@ -1,7 +1,17 @@
 import React from "react";
+import { FluidObject } from "gatsby-image";
+
 import Card from "./UI/Card";
 
-const Facility = (props) => (
+type Props = {
+  facility: {
+    name: string;
+    text: string;
+    image: { childImageSharp: { fluid: FluidObject } };
+  }[];
+};
+
+const Facility: React.FC<Props> = (props) => (
   <>
     <div className="columns is-multiline">
       {props.facility.map((el) => (
