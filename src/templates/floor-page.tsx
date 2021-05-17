@@ -34,6 +34,7 @@ type Props = {
     text: string;
     url: string;
   }[];
+  movieChannelImage: { childImageSharp: { fluid: FluidObject } };
 };
 
 export const FloorPageTemplate: React.FC<Props> = ({
@@ -44,6 +45,7 @@ export const FloorPageTemplate: React.FC<Props> = ({
   seats,
   facility,
   movieChannel,
+  movieChannelImage,
 }) => {
   return (
     <div className="content">
@@ -73,6 +75,10 @@ export const FloorPageTemplate: React.FC<Props> = ({
               <h2>設備のご案内</h2>
               <Facility facility={facility} />
               <h3>映画・動画チャンネルのご案内</h3>
+              <Img
+                fluid={movieChannelImage.childImageSharp.fluid}
+                className={classes.MovieChannelImage}
+              />
               <ul>
                 {movieChannel.map((el) => (
                   <li>
@@ -107,6 +113,7 @@ const FloorPage: React.FC<TemplateProps> = ({ data }) => {
         seats={frontmatter.seats}
         facility={frontmatter.facility}
         movieChannel={frontmatter.movieChannel}
+        movieChannelImage={frontmatter.movieChannelImage}
       />
     </>
   );
@@ -160,6 +167,13 @@ export const floorPageQuery = graphql`
           title
           text
           url
+        }
+        movieChannelImage {
+          childImageSharp {
+            fluid(maxWidth: 512, quality: 64) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }

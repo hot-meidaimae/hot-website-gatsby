@@ -58,6 +58,7 @@ movieChannel:
   - title: グリーンチャンネル
     text: 競馬番組など。
     url: https://www.greenchannel.jp/
+movieChannelImage: /img/tv_drama.png
 title: 席・設備
 tsx: true
 image: /img/37.png
