@@ -9,6 +9,25 @@
   width: 50%;
 }
 
+.Heading {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.Description {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.MainPitchContainer {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 24px;
+  border: dashed 2px #15116f;
+  white-space: "pre-line";
+}
+
 .ReadMore {
   position: absolute;
   top: 90%;

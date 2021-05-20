@@ -78,44 +78,33 @@ export const IndexPageTemplate: React.FC<Props> = ({
         );
       })}
     </Swiper>
-    <div
-      className="is-vcentered"
-      style={{
-        backgroundColor: "#f3f5f6",
-        textAlign: "center",
-      }}
-    >
-      <div className="column" style={{ whiteSpace: "pre-line" }}>
-        <h1 className="title">{mainpitch.title}</h1>
-        <h3 className="subtitle">{mainpitch.description}</h3>
-      </div>
-    </div>
+
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="content">
+            <div className="column is-12">
+              <h3 className={classes.Heading}>お知らせ</h3>
+              <div className={classes.MainPitchContainer}>
+                <h1 className="title">{mainpitch.title}</h1>
+                <h3 className="subtitle">{mainpitch.description}</h3>
+              </div>
+              <BlogRoll isTop />
+              <div className="column is-12 has-text-centered">
+                <Link className="btn" to="/blog">
+                  もっと見る
+                </Link>
+              </div>
+            </div>
+            <div className="columns">
               <div className="column is-12">
-                <h3 className="has-text-weight-semibold is-size-2">お知らせ</h3>
-                <BlogRoll isTop />
+                <h3 className={classes.Heading}>{heading}</h3>
+                <p className={classes.Description}>{description}</p>
+                <Facility facility={intro} />
                 <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/blog">
+                  <Link className="btn" to="/floor">
                     もっと見る
                   </Link>
-                </div>
-              </div>
-              <div className="columns">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                  <Facility facility={intro} />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/floor">
-                      もっと見る
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>
