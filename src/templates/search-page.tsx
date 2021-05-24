@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
+import { FluidObject } from "gatsby-image";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
@@ -11,7 +12,22 @@ import CharSearch from "../components/search/CharSearch";
 import MapDialog from "../components/search/MapDialog";
 import classes from "./search-page.module.scss";
 
-export const SearchPageTemplate = ({
+type TemplateProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: Props;
+    };
+  };
+};
+type Props = {
+  title: string;
+  image: { childImageSharp: { fluid: FluidObject } };
+  description: string;
+  floorMapImage: { childImageSharp: { fluid: FluidObject } };
+  magazines: string;
+};
+
+export const SearchPageTemplate: React.FC<Props> = ({
   title,
   image,
   description,
@@ -72,7 +88,7 @@ export const SearchPageTemplate = ({
   );
 };
 
-const SearchPage = ({ data }) => {
+const SearchPage: React.FC<TemplateProps> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
