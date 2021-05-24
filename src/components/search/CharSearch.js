@@ -54,12 +54,12 @@ const CharSearch = (props) => {
         "https://laravel.hot-meidaimae.com/api/" + props.mode + "index"
       )
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         delete res.data.message;
         setResult(res.data);
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
       });
   }, [props.mode]);
 
@@ -90,7 +90,7 @@ const CharSearch = (props) => {
       }
       sortedResult.push(tmp);
     }
-    console.log(sortedResult);
+    // console.log(sortedResult);
   }
 
   const authorResult = {};

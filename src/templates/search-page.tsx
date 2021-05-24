@@ -4,16 +4,12 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import PersonIcon from "@material-ui/icons/Person";
-import styled from "styled-components";
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from "gatsby-background-image";
 
 import KeywordSearch from "../components/search/KeywordSearch";
 import CharSearch from "../components/search/CharSearch";
 import MapDialog from "../components/search/MapDialog";
-
-const Box = styled.div`
-  margin-top: 1rem;
-`;
+import classes from "./search-page.module.scss";
 
 export const SearchPageTemplate = ({
   title,
@@ -46,6 +42,7 @@ export const SearchPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <h3>キーワード検索</h3>
+              <p>{description}</p>
               <KeywordSearch floorMapImage={floorMapImage} />
 
               <h3>五十音検索</h3>
@@ -59,13 +56,13 @@ export const SearchPageTemplate = ({
                 <Tab icon={<MenuBookIcon />} label="タイトルで検索" />
                 <Tab icon={<PersonIcon />} label="作者名で検索" />
               </Tabs>
-              <Box>
+              <div className={classes.CharSearchContainer}>
                 <CharSearch
                   floorMapImage={floorMapImage}
                   mode={value === 0 ? "title" : "author"}
                   magazines={magazines}
                 />
-              </Box>
+              </div>
             </div>
           </div>
         </div>
