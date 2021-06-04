@@ -22,6 +22,7 @@ facility:
     text: コンビニで買ってきた食べ物などの持ち込みも大歓迎です！
 path: /floor
 templateKey: floor-page
+movieChannelImage: /img/tv_drama.png
 floorMapImage: /img/2020_floorMap.jpg
 seats:
   - name: リクライニング席
@@ -58,11 +59,11 @@ movieChannel:
   - title: グリーンチャンネル
     text: 競馬番組など。
     url: https://www.greenchannel.jp/
-movieChannelImage: /img/tv_drama.png
 title: 席・設備
 tsx: true
 image: /img/37.png
 description: |-
   お席のご案内です。
+  通話は店外でお願いしております。（テレビ会議等も出来ませんのでご了承ください。。）
   全席禁煙（喫煙所あり）となっております。
 ---
