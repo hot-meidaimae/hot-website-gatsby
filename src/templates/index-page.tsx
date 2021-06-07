@@ -81,33 +81,29 @@ export const IndexPageTemplate: React.FC<Props> = ({
 
     <section className="section section--gradient">
       <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="column is-12">
-              <h3 className={classes.Heading}>お知らせ</h3>
-              <div className={classes.MainPitchContainer}>
-                <h1 className="title">{mainpitch.title}</h1>
-                <h3 className="subtitle">{mainpitch.description}</h3>
-              </div>
-              <BlogRoll isTop />
-              <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/blog">
-                  もっと見る
-                </Link>
-              </div>
-            </div>
-            <div className="columns">
-              <div className="column is-12">
-                <h3 className={classes.Heading}>{heading}</h3>
-                <p className={classes.Description}>{description}</p>
-                <Facility facility={intro} />
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/floor">
-                    もっと見る
-                  </Link>
-                </div>
-              </div>
-            </div>
+        <div>
+          <h3 className={classes.Heading}>お知らせ</h3>
+          <div className={classes.MainPitchContainer}>
+            <h1 className="title">{mainpitch.title}</h1>
+            <h3 className={classes.MainPitchDescription}>
+              {mainpitch.description}
+            </h3>
+          </div>
+          <BlogRoll isTop />
+          <div className="column is-12 has-text-centered">
+            <Link className="btn" to="/blog">
+              もっと見る
+            </Link>
+          </div>
+        </div>
+        <div className="column is-12">
+          <h3 className={classes.Heading}>{heading}</h3>
+          <p className={classes.Description}>{description}</p>
+          <Facility facility={intro} />
+          <div className="column is-12 has-text-centered">
+            <Link className="btn" to="/floor">
+              もっと見る
+            </Link>
           </div>
         </div>
       </div>
