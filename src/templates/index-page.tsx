@@ -22,6 +22,8 @@ type TemplateProps = {
 type Props = {
   image: { childImageSharp: { fluid: FluidObject } };
   photos: { childImageSharp: { fluid: FluidObject } }[];
+  newcomerHeading: string;
+  newcomerImage: { childImageSharp: { fluid: FluidObject } };
   heading: string;
   mainpitch: { title: string; description: string };
   description: string;
@@ -35,6 +37,8 @@ type Props = {
 export const IndexPageTemplate: React.FC<Props> = ({
   image,
   photos,
+  newcomerHeading,
+  newcomerImage,
   heading,
   mainpitch,
   description,
@@ -96,6 +100,12 @@ export const IndexPageTemplate: React.FC<Props> = ({
             </Link>
           </div>
         </div>
+        <div className={classes.MainPitchContainer}>
+          <h3 className={classes.Heading}>{newcomerHeading}</h3>
+          <a href={newcomerImage.childImageSharp.fluid.src}>
+            <Img fluid={newcomerImage.childImageSharp.fluid} />
+          </a>
+        </div>
         <div className="column is-12">
           <h3 className={classes.Heading}>{heading}</h3>
           <p className={classes.Description}>{description}</p>
@@ -119,6 +129,8 @@ const IndexPage: React.FC<TemplateProps> = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         photos={frontmatter.photos}
+        newcomerHeading={frontmatter.newcomerHeading}
+        newcomerImage={frontmatter.newcomerImage}
         heading={frontmatter.heading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
@@ -142,6 +154,14 @@ export const pageQuery = graphql`
           }
         }
         photos {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        newcomerHeading
+        newcomerImage {
           childImageSharp {
             fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid
