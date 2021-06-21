@@ -90,7 +90,9 @@ export const IndexPageTemplate: React.FC<Props> = ({
           <div className={classes.MainPitchContainer}>
             <h1 className="title">{mainpitch.title}</h1>
             <h3 className={classes.MainPitchDescription}>
-              {mainpitch.description}
+              <div
+                dangerouslySetInnerHTML={{ __html: mainpitch.description }}
+              />
             </h3>
           </div>
           <BlogRoll isTop />

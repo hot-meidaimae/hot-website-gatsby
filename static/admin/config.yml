@@ -73,7 +73,7 @@ collections:
                 ],
             }
           - { label: 見出し, name: heading, widget: string }
-          - { label: 説明文, name: description, widget: string }
+          - { label: 説明文, name: description, widget: markdown }
           - {
               label: 特徴の説明,
               name: intro,
