@@ -6,7 +6,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import IconButton from "@material-ui/core/IconButton";
 
 type Props = {
-  location: PageProps["location"],
+  location: PageProps["location"];
 };
 
 const Navbar: React.FC<Props> = ({ location }) => {
@@ -52,6 +52,9 @@ const Navbar: React.FC<Props> = ({ location }) => {
             </Link>
             <Link className="navbar-item" to="/floor">
               席・設備
+            </Link>
+            <Link className="navbar-item" to="/shower">
+              シャワー
             </Link>
             <Link className="navbar-item" to="/search">
               コミック検索
