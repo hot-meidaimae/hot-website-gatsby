@@ -21,7 +21,7 @@ type TemplateProps = {
 };
 type Props = {
   image: { childImageSharp: { fluid: FluidObject } };
-  photos: { childImageSharp: { fluid: FluidObject } }[];
+  slideImages: { image: { childImageSharp: { fluid: FluidObject } } }[];
   newcomerHeading: string;
   newcomerImage: { childImageSharp: { fluid: FluidObject } };
   heading: string;
@@ -36,7 +36,7 @@ type Props = {
 
 export const IndexPageTemplate: React.FC<Props> = ({
   image,
-  photos,
+  slideImages,
   newcomerHeading,
   newcomerImage,
   heading,
@@ -68,12 +68,12 @@ export const IndexPageTemplate: React.FC<Props> = ({
         disableOnInteraction: false,
       }}
     >
-      {photos.map((el, i) => {
+      {slideImages.map((el, i) => {
         return (
           <SwiperSlide key={i}>
             <div className={classes.Slide}>
               <Img
-                fluid={el.childImageSharp.fluid}
+                fluid={el.image.childImageSharp.fluid}
                 style={{ height: "100%" }}
                 imgStyle={{ objectFit: "cover", objectPosition: "50% 50%" }}
               />
@@ -130,7 +130,7 @@ const IndexPage: React.FC<TemplateProps> = ({ data }) => {
     <>
       <IndexPageTemplate
         image={frontmatter.image}
-        photos={frontmatter.photos}
+        slideImages={frontmatter.slideImages}
         newcomerHeading={frontmatter.newcomerHeading}
         newcomerImage={frontmatter.newcomerImage}
         heading={frontmatter.heading}
@@ -155,10 +155,12 @@ export const pageQuery = graphql`
             }
           }
         }
-        photos {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid
+        slideImages {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

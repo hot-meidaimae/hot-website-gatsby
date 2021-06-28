@@ -46,7 +46,7 @@ collections:
       - { label: "内容", name: "body", widget: "markdown" }
       - { label: "タグ", name: "tags", widget: "list", required: false }
 
-  - name: "ページ"
+  - name: "pages"
     label: "Pages"
     files:
       - file: "src/pages/index.md"
@@ -61,7 +61,12 @@ collections:
             }
           - { label: タイトル, name: title, widget: string }
           - { label: 画像, name: image, widget: image }
-          - { label: スライドショー画像, name: photos, widget: list }
+          - {
+              label: スライドショー画像,
+              name: slideImages,
+              widget: list,
+              field: { label: 画像, name: image, widget: image },
+            }
           - {
               label: 見出し文,
               name: mainpitch,

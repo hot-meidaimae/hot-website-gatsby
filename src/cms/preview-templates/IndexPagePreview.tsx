@@ -13,7 +13,7 @@ const IndexPagePreview: React.FC<PreviewTemplateComponentProps> = ({
     return (
       <IndexPageTemplate
         image={getAsset(data.image) as any}
-        photos={data.photos.map((el: any) => getAsset(el.image))}
+        slideImages={data.slideImages.map((el: any) => getAsset(el.image))}
         heading={data.heading}
         mainpitch={data.mainpitch}
         description={data.description}

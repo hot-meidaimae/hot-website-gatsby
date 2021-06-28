@@ -2,10 +2,10 @@
 templateKey: index-page
 title: ほっとステーション明大前店
 image: /img/logo.jpg
-photos:
-  - /img/20200714_renewaldeveloped2.jpg
-  - /img/DSC00735_h800-min.jpg
-  - /img/DSC00754_h800-min.jpg
+slideImages:
+  - image: /img/20200714_renewaldeveloped2.jpg
+  - image: /img/DSC00735_h800-min.jpg
+  - image: /img/DSC00754_h800-min.jpg
 mainpitch:
   title: ネットカフェは休業要請対象外のため、緊急事態宣言中も24時間営業いたします！
   description: |-
