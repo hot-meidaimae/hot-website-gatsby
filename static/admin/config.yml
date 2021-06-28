@@ -69,11 +69,11 @@ collections:
               fields:
                 [
                   { label: タイトル, name: title, widget: string },
-                  { label: 内容, name: description, widget: text },
+                  { label: 内容, name: description, widget: markdown },
                 ],
             }
           - { label: 見出し, name: heading, widget: string }
-          - { label: 説明文, name: description, widget: markdown }
+          - { label: 説明文, name: description, widget: text }
           - {
               label: 特徴の説明,
               name: intro,
