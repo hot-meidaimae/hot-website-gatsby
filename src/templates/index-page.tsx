@@ -20,8 +20,10 @@ type TemplateProps = {
   };
 };
 type Props = {
-  image: { childImageSharp: { fluid: FluidObject } };
-  slideImages: { image: { childImageSharp: { fluid: FluidObject } } }[];
+  image: { childImageSharp: { fluid: FluidObject } } | string;
+  slideImages:
+    | { image: { childImageSharp: { fluid: FluidObject } } }[]
+    | string[];
   newcomerHeading: string;
   newcomerImage: { childImageSharp: { fluid: FluidObject } };
   heading: string;
@@ -50,7 +52,7 @@ export const IndexPageTemplate: React.FC<Props> = ({
         <source srcSet={circleLogo} media="(max-width:600px)" />
         <img
           src={`${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            typeof image === "string" ? image : image.childImageSharp.fluid.src
           }`}
           alt="Logo"
         />
@@ -69,15 +71,25 @@ export const IndexPageTemplate: React.FC<Props> = ({
       }}
     >
       {slideImages.map((el, i) => {
-        console.log(el);
         return (
           <SwiperSlide key={i}>
             <div className={classes.Slide}>
-              <Img
-                fluid={el.image.childImageSharp.fluid}
-                style={{ height: "100%" }}
-                imgStyle={{ objectFit: "cover", objectPosition: "50% 50%" }}
-              />
+              {typeof el === "string" ? (
+                <img
+                  src={el}
+                  style={{
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "50% 50%",
+                  }}
+                />
+              ) : (
+                <Img
+                  fluid={el.image.childImageSharp.fluid}
+                  style={{ height: "100%" }}
+                  imgStyle={{ objectFit: "cover", objectPosition: "50% 50%" }}
+                />
+              )}
             </div>
           </SwiperSlide>
         );
