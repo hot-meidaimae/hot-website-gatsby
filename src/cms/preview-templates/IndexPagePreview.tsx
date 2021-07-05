@@ -8,6 +8,7 @@ const IndexPagePreview: React.FC<PreviewTemplateComponentProps> = ({
   getAsset,
 }) => {
   const data = entry.getIn(["data"]).toJS();
+  console.log(data);
 
   if (data) {
     return (
