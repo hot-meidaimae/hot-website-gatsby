@@ -69,6 +69,7 @@ export const IndexPageTemplate: React.FC<Props> = ({
       }}
     >
       {slideImages.map((el, i) => {
+        console.log(el);
         return (
           <SwiperSlide key={i}>
             <div className={classes.Slide}>
