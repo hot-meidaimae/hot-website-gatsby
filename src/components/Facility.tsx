@@ -7,7 +7,7 @@ type Props = {
   facility: {
     name: string;
     text: string;
-    image: { childImageSharp: { fluid: FluidObject } };
+    image: { childImageSharp: { fluid: FluidObject } } | string;
   }[];
 };
 

@@ -25,14 +25,14 @@ type Props = {
     | { image: { childImageSharp: { fluid: FluidObject } } }[]
     | string[];
   newcomerHeading: string;
-  newcomerImage: { childImageSharp: { fluid: FluidObject } };
+  newcomerImage: { childImageSharp: { fluid: FluidObject } } | string;
   heading: string;
   mainpitch: { title: string; description: string };
   description: string;
   intro: {
     name: string;
     text: string;
-    image: { childImageSharp: { fluid: FluidObject } };
+    image: { childImageSharp: { fluid: FluidObject } } | string;
   }[];
 };
 
@@ -117,8 +117,18 @@ export const IndexPageTemplate: React.FC<Props> = ({
         </div>
         <div className={classes.MainPitchContainer}>
           <h3 className={classes.Heading}>{newcomerHeading}</h3>
-          <a href={newcomerImage.childImageSharp.fluid.src}>
-            <Img fluid={newcomerImage.childImageSharp.fluid} />
+          <a
+            href={
+              typeof newcomerImage === "string"
+                ? newcomerImage
+                : newcomerImage.childImageSharp.fluid.src
+            }
+          >
+            {typeof newcomerImage === "string" ? (
+              <img src={newcomerImage} />
+            ) : (
+              <Img fluid={newcomerImage.childImageSharp.fluid} />
+            )}
           </a>
         </div>
         <div className="column is-12">

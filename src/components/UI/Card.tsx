@@ -6,13 +6,17 @@ import classes from "./Card.module.scss";
 type Props = {
   name: string;
   text: string;
-  image: { childImageSharp: { fluid: FluidObject } };
+  image: { childImageSharp: { fluid: FluidObject } } | string;
 };
 
 const Card: React.FC<Props> = (props) => (
   <div className={"card " + classes.CardBox}>
     <div className="card-image">
-      <Img fluid={props.image.childImageSharp.fluid} />
+      {typeof props.image === "string" ? (
+        <img src={props.image} />
+      ) : (
+        <Img fluid={props.image.childImageSharp.fluid} />
+      )}
     </div>
     <div className="card-content">
       <div className="media">
