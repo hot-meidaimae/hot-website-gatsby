@@ -10,7 +10,6 @@ import "swiper/components/scrollbar/scrollbar.scss";
 import "swiper/components/effect-fade/effect-fade.scss";
 import useSiteMetadata from "./components/SiteMetadata";
 import { withPrefix, PageProps } from "gatsby";
-import "./cms/cms";
 
 const TemplateWrapper: React.FC<PageProps> = ({ children, location }) => {
   const { title, description } = useSiteMetadata();
