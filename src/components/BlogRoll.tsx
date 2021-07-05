@@ -1,40 +1,8 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-const BlogRoll = ({ isTop }: { isTop: boolean }) => {
-  const data = useStaticQuery(graphql`
-    query BlogRollQuery {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-      ) {
-        edges {
-          node {
-            excerpt(pruneLength: 200, truncate: true)
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "YYYY年MM月DD日")
-              featuredpost
-              featuredimage {
-                childImageSharp {
-                  fluid(maxWidth: 120, quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
+const BlogRoll = ({ isTop, data }: { isTop: boolean; data: any }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
@@ -91,4 +59,39 @@ const BlogRoll = ({ isTop }: { isTop: boolean }) => {
   );
 };
 
-export default BlogRoll;
+export default ({ isTop }: { isTop: boolean }) => (
+  <StaticQuery
+    query={graphql`
+      query BlogRollQuery {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 400)
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                templateKey
+                date(formatString: "MMMM DD, YYYY")
+                featuredpost
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => <BlogRoll data={data} isTop={isTop} />}
+  />
+);
