@@ -1,0 +1,15 @@
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialIcon {
+  color: #fff;
+  margin: 12px;
+  transition: 0.2s;
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+}

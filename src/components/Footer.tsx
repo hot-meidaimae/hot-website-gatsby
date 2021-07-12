@@ -3,18 +3,9 @@ import { Link } from "gatsby";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import IconButton from "@material-ui/core/IconButton";
-import styled from "styled-components";
 
 import logo from "../img/HotStation_logo-min.png";
-
-const Icons = styled.div`
-  text-align: center;
-  
-  .MuiIconButton-colorPrimary {
-    color: #fff;
-  }
-`;
+import classes from "./Footer.module.scss";
 
 const Footer = class extends React.Component {
   render() {
@@ -72,38 +63,37 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-              <Icons className="column is-4 social">
-                <a
-                  title="twitter"
-                  href="https://twitter.com/hotmeidaimae"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconButton color="primary">
+              <div className="column is-4">
+                <div className={classes.SocialIcons}>
+                  <a
+                    title="twitter"
+                    href="https://twitter.com/hotmeidaimae"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.SocialIcon}
+                  >
                     <TwitterIcon />
-                  </IconButton>
-                </a>
-                <a
-                  title="instagram"
-                  href="https://www.instagram.com/hotmeidai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconButton color="primary">
+                  </a>
+                  <a
+                    title="instagram"
+                    href="https://www.instagram.com/hotmeidai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.SocialIcon}
+                  >
                     <InstagramIcon />
-                  </IconButton>
-                </a>
-                <a
-                  title="facebook"
-                  href="https://www.facebook.com/hotmeidaimae/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconButton color="primary">
+                  </a>
+                  <a
+                    title="facebook"
+                    href="https://www.facebook.com/hotmeidaimae/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.SocialIcon}
+                  >
                     <FacebookIcon />
-                  </IconButton>
-                </a>
-              </Icons>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
