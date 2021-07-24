@@ -3,7 +3,7 @@ templateKey: recruit-page
 path: /recruit
 image: /img/recruitHeader.jpg
 title: アルバイト募集
-description: >
+description: >-
   ・１６時３０分～２２時３０分を週３程度。（週４以上入りたい方は他の時間でしたら入れます。）<br>
 
   ・２０歳～４０歳位まで｡ <br> 
