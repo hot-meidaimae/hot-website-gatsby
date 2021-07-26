@@ -15,7 +15,7 @@ type TemplateProps = {
 };
 type Props = {
   title: string;
-  image: { childImageSharp: { fluid: FluidObject } };
+  image: { childImageSharp: { fluid: FluidObject } } | string;
   servicePricing: {
     name: string;
     boothPrice: number;
