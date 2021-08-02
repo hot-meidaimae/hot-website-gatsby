@@ -3,7 +3,8 @@ import { Link, PageProps } from "gatsby";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import IconButton from "@material-ui/core/IconButton";
+
+import classes from "./Navbar.module.scss";
 
 type Props = {
   location: PageProps["location"];
@@ -78,30 +79,27 @@ const Navbar: React.FC<Props> = ({ location }) => {
               href="https://twitter.com/hotmeidaimae"
               target="_blank"
               rel="noopener noreferrer"
+              className={classes.SocialIcon}
             >
-              <IconButton>
-                <TwitterIcon style={{ fill: "#fff" }} />
-              </IconButton>
+              <TwitterIcon />
             </a>
             <a
               title="instagram"
               href="https://www.instagram.com/hotmeidai/"
               target="_blank"
               rel="noopener noreferrer"
+              className={classes.SocialIcon}
             >
-              <IconButton>
-                <InstagramIcon style={{ fill: "#fff" }} />
-              </IconButton>
+              <InstagramIcon />
             </a>
             <a
               title="facebook"
               href="https://www.facebook.com/hotmeidaimae/"
               target="_blank"
               rel="noopener noreferrer"
+              className={classes.SocialIcon}
             >
-              <IconButton>
-                <FacebookIcon style={{ fill: "#fff" }} />
-              </IconButton>
+              <FacebookIcon />
             </a>
           </div>
         </div>
