@@ -8,17 +8,20 @@ slideImages:
   - image: /img/DSC00754_h800-min.jpg
 mainpitch:
   title: ネットカフェは休業要請対象外のため、緊急事態宣言中も24時間営業いたします！
-  description: |-
+  description: >-
     ダイキン社の 24 時間換気システム導入しました！！
+
     さらに吸気口を新設し外気を取り込み、排気用換気扇を増設し全力で換気を行っています。
 
+
     ※快活クラブさんのような完全個室ではなく上のほうは開いている個室です。（その分快活さんより料金はぐっとお安くなっております。）
+
     ※通話は店外でお願いしております。（テレビ会議等も出来ませんのでご了承ください。。）
+
+    ※高校生２名での個室利用お断りしています。
+
     ※最寄りの<a href="https://www.kaikatsu.jp/shop/detail/20912.html" target="_blank" rel="noopener noreferrer">快活クラブさん</a>は下北にございます。
-newcomerHeading: はじめての方へ
-newcomerImage: /img/howto.jpg
 heading: 静かで清潔なインターネット・コミックカフェです。
-description: ほっとステーション明大前店は2021年に22周年を迎えました。
 intro:
   - name: 静かで清潔な空間
     text: スタッフによる清掃が行き届いた静かで清潔な空間です。
@@ -32,5 +35,8 @@ intro:
   - name: 各種電子決済対応
     text: Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
     image: /img/e-money.png
+newcomerImage: /img/howto.jpg
+newcomerHeading: はじめての方へ
 tsx: true
+description: ほっとステーション明大前店は2021年に22周年を迎えました。
 ---
