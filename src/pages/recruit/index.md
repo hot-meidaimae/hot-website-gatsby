@@ -3,6 +3,7 @@ templateKey: recruit-page
 path: /recruit
 image: /img/recruitHeader.jpg
 title: アルバイト募集
+tsx: true
 description: >-
   ・１６時３０分～２２時３０分
 

@@ -1,13 +1,27 @@
 import React from "react";
 import { graphql } from "gatsby";
-import styled from "styled-components";
-import BackgroundImage from 'gatsby-background-image'
+import { FluidObject } from "gatsby-image";
+import BackgroundImage from "gatsby-background-image";
 
-const PreLine = styled.p`
-  white-space: pre-line;
-`;
+type TemplateProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: Props;
+      html: string;
+    };
+  };
+};
+type Props = {
+  title: string;
+  image: { childImageSharp: { fluid: FluidObject } };
+  description: string;
+};
 
-export const RecruitPageTemplate = ({ title, image, description }) => {
+export const RecruitPageTemplate: React.FC<Props> = ({
+  title,
+  image,
+  description,
+}) => {
   return (
     <div className="content">
       <BackgroundImage
@@ -30,7 +44,16 @@ export const RecruitPageTemplate = ({ title, image, description }) => {
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <PreLine>{description}</PreLine>
+              <p>{description}</p>
+              <p>
+                ほっとステーション明大前店のLINE公式アカウントを友達追加しておくと、新しいアルバイト募集があった際にお知らせいたします。
+              </p>
+              <a href="https://lin.ee/OwLfsCc">
+                <img
+                  height="36"
+                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -39,7 +62,7 @@ export const RecruitPageTemplate = ({ title, image, description }) => {
   );
 };
 
-const RecruitPage = ({ data }) => {
+const RecruitPage: React.FC<TemplateProps> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
