@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 
 import logo from "../img/HotStation_logo-min.png";
 import classes from "./Footer.module.scss";
@@ -66,13 +63,22 @@ const Footer = class extends React.Component {
               <div className="column is-4">
                 <div className={classes.SocialIcons}>
                   <a
+                    title="line"
+                    href="https://lin.ee/OwLfsCc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.SocialIcon}
+                  >
+                    <div className={classes.LineIcon} />
+                  </a>
+                  <a
                     title="twitter"
                     href="https://twitter.com/hotmeidaimae"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={classes.SocialIcon}
                   >
-                    <TwitterIcon />
+                    <div className={classes.TwitterIcon} />
                   </a>
                   <a
                     title="instagram"
@@ -81,7 +87,7 @@ const Footer = class extends React.Component {
                     rel="noopener noreferrer"
                     className={classes.SocialIcon}
                   >
-                    <InstagramIcon />
+                    <div className={classes.InstagramIcon} />
                   </a>
                   <a
                     title="facebook"
@@ -90,7 +96,7 @@ const Footer = class extends React.Component {
                     rel="noopener noreferrer"
                     className={classes.SocialIcon}
                   >
-                    <FacebookIcon />
+                    <div className={classes.FacebookIcon} />
                   </a>
                 </div>
               </div>

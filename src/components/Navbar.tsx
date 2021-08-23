@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, PageProps } from "gatsby";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 
 import classes from "./Navbar.module.scss";
 
@@ -73,7 +70,18 @@ const Navbar: React.FC<Props> = ({ location }) => {
               アルバイト募集
             </Link>
           </div>
-          <div className={`navbar-end has-text-centered`}>
+          <div
+            className={`navbar-end has-text-centered ${classes.SocialIcons}`}
+          >
+            <a
+              title="line"
+              href="https://lin.ee/OwLfsCc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.SocialIcon}
+            >
+              <div className={classes.LineIcon} />
+            </a>
             <a
               title="twitter"
               href="https://twitter.com/hotmeidaimae"
@@ -81,7 +89,7 @@ const Navbar: React.FC<Props> = ({ location }) => {
               rel="noopener noreferrer"
               className={classes.SocialIcon}
             >
-              <TwitterIcon />
+              <div className={classes.TwitterIcon} />
             </a>
             <a
               title="instagram"
@@ -90,7 +98,7 @@ const Navbar: React.FC<Props> = ({ location }) => {
               rel="noopener noreferrer"
               className={classes.SocialIcon}
             >
-              <InstagramIcon />
+              <div className={classes.InstagramIcon} />
             </a>
             <a
               title="facebook"
@@ -99,7 +107,7 @@ const Navbar: React.FC<Props> = ({ location }) => {
               rel="noopener noreferrer"
               className={classes.SocialIcon}
             >
-              <FacebookIcon />
+              <div className={classes.FacebookIcon} />
             </a>
           </div>
         </div>

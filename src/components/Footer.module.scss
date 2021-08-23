@@ -1,15 +1,53 @@
 .SocialIcons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .SocialIcon {
-  color: #fff;
   margin: 12px;
   transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    color: #fff;
     transform: scale(1.2);
   }
+}
+
+.Icon {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.LineIcon {
+  composes: Icon;
+
+  -webkit-mask-image: url(/svg/social/line.svg);
+  mask-image: url(/svg/social/line.svg);
+}
+
+.TwitterIcon {
+  composes: Icon;
+
+  -webkit-mask-image: url(/svg/social/twitter.svg);
+  mask-image: url(/svg/social/twitter.svg);
+}
+
+.InstagramIcon {
+  composes: Icon;
+
+  -webkit-mask-image: url(/svg/social/instagram.svg);
+  mask-image: url(/svg/social/instagram.svg);
+}
+
+.FacebookIcon {
+  composes: Icon;
+
+  -webkit-mask-image: url(/svg/social/facebook.svg);
+  mask-image: url(/svg/social/facebook.svg);
 }
