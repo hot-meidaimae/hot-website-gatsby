@@ -174,7 +174,8 @@ $menu-label-color: $white-ter;
     color: #fff;
   }
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     color: $secondary !important;
   }
 }
