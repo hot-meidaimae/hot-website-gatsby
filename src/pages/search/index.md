@@ -5,7 +5,7 @@ path: /search
 image: /img/s__41992197.jpg
 title: コミック検索
 description: ひらがなや題名の一部でも検索できます！漢字やスペルが間違っていると検索できないことがあるのでお試しください。
-floorMapImage: /img/2020_comicMap.jpg
+floorMapImage: /img/kensaku-map.jpg
 magazines: |-
   ★週刊★
     少年ジャンプ（月曜日）
