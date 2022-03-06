@@ -4,47 +4,45 @@ templateKey: pricing-page
 image: /img/hotstation_logo-min.png
 title: 料金
 description: |-
+  ご利用時間に合わせてお得なパック料金に自動切替！！
   会員登録は無料。PC利用なければ会員登録なしでもご利用いただけます。
-  コースは入店の際にお選びください。自動切り替えは行っておりません。
-  会員の方はご利用金額の５％（１００円につき５円）ポイント還元いたします。
+  会員の方は利用金額の約５％（１００円で１ポイント＝５円）のポイントが貯まります。（例・３時間パックで５５円分）
   ※Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
   ※途中外出可（一声おかけください）
 servicePricing:
-  - name: |-
-      基本料金コース
-      最初の30分
-    boothPrice: 264
-    boothPriceTax: 290
-    openPrice: 264
-    openPriceTax: 290
+  - name: 最初の30分
+    boothPrice: "273"
+    boothPriceTax: "300"
+    openPrice: "273"
+    openPriceTax: "300"
   - name: |-
       モーニング2時間パック
       （5時～12時受付）
-    boothPrice: 546
-    boothPriceTax: 600
-    openPrice: 637
-    openPriceTax: 700
+    boothPrice: "619"
+    boothPriceTax: "680"
+    openPrice: "710"
+    openPriceTax: "780"
   - name: |-
       3時間パック
       （終日）
-    boothPrice: 846
-    boothPriceTax: 930
-    openPrice: 982
-    openPriceTax: 1080
+    boothPrice: "891"
+    boothPriceTax: "980"
+    openPrice: "1000"
+    openPriceTax: "1100"
   - name: |-
       5時間パック
       （終日）
-    boothPrice: 1091
-    boothPriceTax: 1200
-    openPrice: 1319
-    openPriceTax: 1450
+    boothPrice: "1182"
+    boothPriceTax: "1300"
+    openPrice: "1364"
+    openPriceTax: "1500"
   - name: |-
       9時間パック
       （終日）
-    boothPrice: 1637
+    boothPrice: "1637"
     boothPriceTax: 1800
-    openPrice: 1891
-    openPriceTax: 2080
+    openPrice: "2000"
+    openPriceTax: "2200"
   - name: |-
       12時間パック
       （終日）
@@ -53,17 +51,17 @@ servicePricing:
     openPrice: 2546
     openPriceTax: 2800
   - name: 各延長10分
-    boothPrice: 73
-    boothPriceTax: 80
-    openPrice: 73
-    openPriceTax: 80
+    boothPrice: "91"
+    boothPriceTax: "100"
+    openPrice: "91"
+    openPriceTax: "100"
 showerPricing:
   - name: 当店利用時30分
     price: 300
   - name: シャワーのみ30分
-    price: 590
+    price: "600"
   - name: 各延長10分
-    price: 80
+    price: "100"
   - name: フェイスタオル
     price: 100
   - name: バスタオル
