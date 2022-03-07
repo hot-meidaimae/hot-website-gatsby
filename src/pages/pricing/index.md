@@ -40,16 +40,16 @@ servicePricing:
       9時間パック
       （終日）
     boothPrice: "1637"
-    boothPriceTax: 1800
+    boothPriceTax: "1800"
     openPrice: "2000"
     openPriceTax: "2200"
   - name: |-
       12時間パック
       （終日）
-    boothPrice: 1819
-    boothPriceTax: 2000
-    openPrice: 2546
-    openPriceTax: 2800
+    boothPrice: "1819"
+    boothPriceTax: "2000"
+    openPrice: "2546"
+    openPriceTax: "2800"
   - name: 各延長10分
     boothPrice: "91"
     boothPriceTax: "100"
@@ -57,17 +57,17 @@ servicePricing:
     openPriceTax: "100"
 showerPricing:
   - name: 当店利用時30分
-    price: 300
+    price: "300"
   - name: シャワーのみ30分
     price: "600"
   - name: 各延長10分
     price: "100"
   - name: フェイスタオル
-    price: 100
+    price: "100"
   - name: バスタオル
-    price: 300
+    price: "300"
   - name: ボディースポンジ
-    price: 50
+    price: "50"
 showerDescription: |-
   ※シャンプー・リンス・ボディーソープ込
   ※シャワーのみでもフリードリンク付き！
