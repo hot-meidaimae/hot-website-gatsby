@@ -26,16 +26,16 @@ movieChannelImage: /img/tv_drama.png
 floorMapImage: /img/2020_floorMap.jpg
 seats:
   - name: リクライニング席
-    text: 定番のお席です。
+    text: 定番のお席です。ゆっくりしたい方向け。作業やお仕事には椅子の高さを調整できるビジネス席がおすすめです。
     image: /img/seats/reclining.jpg
   - name: ビジネス席
     text: 椅子の高さが変えられますので作業に最適です。
     image: /img/seats/business.jpg
   - name: フラット席
-    text: 座敷タイプのお席です。
+    text: 座敷タイプのお席です。ゆっくりされたい方・ご宿泊の方に最適です。高身長の方も安心な長めのお席も2席ございます。
     image: /img/seats/flat.jpg
   - name: ソファー・ペア席
-    text: 1〜2名でご利用いただけます。
+    text: 1〜2名でご利用いただけます。1名でも使えるので空いてればラッキーです。高身長の方でも足を延ばしてゆっくりお使いいただけます。
     image: /img/seats/pair.jpg
   - name: オープン席
     text: ちょっとした利用やお手頃に漫画を読むのにおすすめです。
