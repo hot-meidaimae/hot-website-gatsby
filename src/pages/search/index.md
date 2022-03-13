@@ -4,7 +4,7 @@ tsx: true
 path: /search
 image: /img/s__41992197.jpg
 title: コミック検索
-description: ひらがなや題名の一部でも検索できます！漢字やスペルが間違っていると検索できないことがあるのでお試しください。
+description: ひらがなや題名の一部でも検索できます！漢字やスペルが間違っていると検索できないのでお試しください！
 floorMapImage: /img/kensaku-map.jpg
 magazines: |-
   ★週刊★
