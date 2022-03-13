@@ -7,16 +7,14 @@ facility:
     text: シャンプーリンスボディーソープ込み。店舗利用時は３０分３００円。シャワーのみ利用は３０分６００円。
     image: /img/facility/shower.jpg
   - name: プリンター
-    text: プリントアウトはカラー・モノクロ共にA４判１枚１０円（税込）です！
+    text: プリントアウトはカラー・モノクロ共にA４・A５・Ｂ４・Ｂ５は１枚１枚１０円（税込）です！Ａ３は１枚２０円（税込）。
     image: /img/kaden_printer.png
   - name: Wi-Fi
     text: Wi-Fi飛んでます。持ち込みのPCお使い頂けます。
     image: /img/text_wifi.png
   - image: /img/pc_smartphone_battery_juuden.png
     name: 各座席に電源完備！
-    text: |-
-      携帯電話・iphone・スマートフォン充電が無料でできます！
-      スマートフォン充電器の無料貸し出しも行っています。
+    text: 携帯電話・iphone・スマートフォン充電器の無料貸し出しも行っています！
   - image: /img/food_cup_ramen_syouyu.png
     name: 持ち込み歓迎！
     text: コンビニで買ってきた食べ物などの持ち込みも大歓迎です！
