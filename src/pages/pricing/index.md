@@ -15,6 +15,11 @@ servicePricing:
     boothPriceTax: "300"
     openPrice: "273"
     openPriceTax: "300"
+  - name: 各延長10分
+    boothPrice: "82"
+    boothPriceTax: "90"
+    openPrice: "91"
+    openPriceTax: "100"
   - name: |-
       モーニング2時間パック
       （5時～12時受付）
@@ -50,11 +55,6 @@ servicePricing:
     boothPriceTax: "2000"
     openPrice: "2546"
     openPriceTax: "2800"
-  - name: 各延長10分
-    boothPrice: "82"
-    boothPriceTax: "90"
-    openPrice: "91"
-    openPriceTax: "100"
 showerPricing:
   - name: 当店利用時30分
     price: "300"
