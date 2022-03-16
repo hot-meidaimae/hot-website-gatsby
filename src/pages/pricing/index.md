@@ -53,8 +53,8 @@ servicePricing:
   - name: 各延長10分
     boothPrice: "91"
     boothPriceTax: "100"
-    openPrice: "91"
-    openPriceTax: "100"
+    openPrice: "82"
+    openPriceTax: "90"
 showerPricing:
   - name: 当店利用時30分
     price: "300"
