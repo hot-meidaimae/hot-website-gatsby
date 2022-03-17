@@ -29,7 +29,7 @@ intro:
   - name: 各種電子決済対応
     text: |-
       Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
-      ※paypay、世田谷payも使えるようになりました。
+      ※paypay、せたがやpayも使えるようになりました。
     image: /img/e-money.png
 newcomerImage: /img/howto.jpg
 newcomerHeading: はじめての方へ
