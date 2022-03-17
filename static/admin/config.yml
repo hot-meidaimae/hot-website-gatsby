@@ -77,6 +77,8 @@ collections:
                   { label: 内容, name: description, widget: markdown },
                 ],
             }
+          - { label: はじめての方へ見出し, name: newcomerHeading, widget: string }
+          - { label: はじめての方へ画像, name: newcomerImage, widget: image }
           - { label: 見出し, name: heading, widget: string }
           - { label: 説明文, name: description, widget: text }
           - {
