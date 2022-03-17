@@ -15,7 +15,10 @@ mainpitch:
 
     ・ダイキン社の 24 時間換気システム導入しました！
     さらに吸気口を新設し外気を取り込み、排気用換気扇を増設し全力で換気を行っています！
+newcomerHeading: はじめての方へ
+newcomerImage: /img/howto2.jpg
 heading: 静かで清潔なインターネット・コミックカフェです。
+description: ほっとステーション明大前店は2022年に23周年を迎えました。
 intro:
   - name: 静かで清潔な空間
     text: 個室とオープン席がござます。漫画・ネット・お仕事・ご宿泊などにお使いいただけます。
@@ -31,8 +34,5 @@ intro:
       Suicaやクレジットカードをはじめとした様々な電子決済に対応しております。
       ※paypay、せたがやpayも使えるようになりました。
     image: /img/e-money.png
-newcomerImage: /img/howto.jpg
-newcomerHeading: はじめての方へ
 tsx: true
-description: ほっとステーション明大前店は2022年に23周年を迎えました。
 ---
