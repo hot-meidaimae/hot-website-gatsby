@@ -6,7 +6,6 @@ title: アルバイト募集
 tsx: true
 description: |
   只今アルバイトを募集しております。
-  https://ats.joboplite.jp/job_offers/4502119
 
   03-5301-8844
   または
