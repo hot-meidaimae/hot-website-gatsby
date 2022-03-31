@@ -22,7 +22,7 @@ type TemplateProps = {
 type Props = {
   image: { childImageSharp: { fluid: FluidObject } } | string;
   slideImages:
-    | { image: { childImageSharp: { fluid: FluidObject } } }[]
+    | { childImageSharp: { fluid: FluidObject } }[]
     | string[];
   newcomerHeading: string;
   newcomerImage: { childImageSharp: { fluid: FluidObject } } | string;
@@ -85,7 +85,7 @@ export const IndexPageTemplate: React.FC<Props> = ({
                 />
               ) : (
                 <Img
-                  fluid={el.image.childImageSharp.fluid}
+                  fluid={el.childImageSharp.fluid}
                   style={{ height: "100%" }}
                   imgStyle={{ objectFit: "cover", objectPosition: "50% 50%" }}
                 />
@@ -179,11 +179,9 @@ export const pageQuery = graphql`
           }
         }
         slideImages {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1600) {
-                ...GatsbyImageSharpFluid
-              }
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
