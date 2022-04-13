@@ -17,7 +17,7 @@ mainpitch:
     さらに吸気口を新設し外気を取り込み、排気用換気扇を増設し全力で換気を行っています！
 newcomerHeading: はじめての方へ
 newcomerImage: /img/howto2.jpg
-heading: 静かで清潔なインターネット・コミックカフェです。
+heading: 「あんしん・きれい」なインターネット・コミックカフェです。
 description: ほっとステーション明大前店は2022年に23周年を迎えました。
 intro:
   - name: 静かで清潔な空間
