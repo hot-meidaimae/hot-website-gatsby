@@ -4,5 +4,5 @@ path: /recruit
 image: /img/recruitHeader.jpg
 title: アルバイト募集
 tsx: true
-description: https://i3510u6ny.jbplt.jp/
+description: https://i3510u6ny.jbplt.jp/recruit/4502119
 ---
