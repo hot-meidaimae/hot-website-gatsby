@@ -5,7 +5,6 @@ image: /img/recruitHeader.jpg
 title: アルバイト募集
 tsx: true
 description: |-
-  アルバイト募集しております～
   アルバイト募集開始いたしました！
 
   ・1人での店番のお仕事です！
