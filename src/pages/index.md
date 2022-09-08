@@ -7,7 +7,7 @@ slideImages:
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
-  title: ２４時間営業の泊まれる漫画喫茶リニューアルオープンしました！
+  title: ２４時間営業の泊まれる漫画喫茶リニューアルオープン！
   description: |-
     ・個室の壁が高くなり快適にお過ごしいただけます！
 
