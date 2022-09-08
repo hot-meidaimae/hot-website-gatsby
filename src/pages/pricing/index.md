@@ -21,9 +21,7 @@ servicePricing:
     boothPriceTax: "90"
     openPrice: "91"
     openPriceTax: "100"
-  - name: |-
-      モーニング2時間パック
-      （5時～12時受付）
+  - name: モーニング2時間パック（5時～12時受付・受付から２時間）
     boothPrice: "619"
     boothPriceTax: "680"
     openPrice: "710"
