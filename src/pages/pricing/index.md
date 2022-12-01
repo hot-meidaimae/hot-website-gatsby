@@ -74,12 +74,12 @@ servicePricing:
     boothPriceTax: "3200"
     openPrice: "5364"
     openPriceTax: "5900"
-  - name: 平日限定モーニング2時間パック（月～金朝5時～昼12時受付・受付から２時間）
+  - name: 平日限定モーニング2時間パック（月～金朝5時～昼12時受付）
     boothPrice: "619"
     boothPriceTax: "680"
     openPrice: "728"
     openPriceTax: "800"
-  - name: 日曜限定イブニング2時間パック（日曜夜19時～24時の入店から2時間）
+  - name: 日曜限定イブニング2時間パック（日曜夜19時～24時受付）
     boothPrice: "619"
     boothPriceTax: "680"
     openPrice: "728"
