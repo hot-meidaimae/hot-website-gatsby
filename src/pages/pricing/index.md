@@ -78,9 +78,9 @@ showerPricing:
   - name: 当店利用時30分
     price: "300"
   - name: シャワーのみ30分
-    price: "600"
+    price: "620"
   - name: 各延長10分
-    price: "100"
+    price: "90"
   - name: フェイスタオル
     price: "100"
   - name: バスタオル
