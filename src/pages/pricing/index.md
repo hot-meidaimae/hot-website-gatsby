@@ -21,6 +21,11 @@ servicePricing:
     boothPriceTax: "90"
     openPrice: "91"
     openPriceTax: "100"
+  - name: 1時間パック（終日）
+    boothPrice: "537"
+    boothPriceTax: "590"
+    openPrice: "519"
+    openPriceTax: "570"
   - name: |-
       3時間パック
       （終日）
