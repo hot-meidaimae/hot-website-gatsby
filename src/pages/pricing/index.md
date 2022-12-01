@@ -59,17 +59,17 @@ servicePricing:
     boothPriceTax: "2300"
     openPrice: "3455"
     openPriceTax: "3800"
-  - name: 18時間パック
+  - name: 18時間パック(終日)
     boothPrice: "2364"
     boothPriceTax: "2600"
     openPrice: "4182"
     openPriceTax: "4600"
-  - name: 21時間パック
+  - name: 21時間パック(終日)
     boothPrice: "2367"
     boothPriceTax: "2900"
     openPrice: "4728"
     openPriceTax: "5200"
-  - name: 24時間パック
+  - name: 24時間パック(終日)
     boothPrice: "2910"
     boothPriceTax: "3200"
     openPrice: "5364"
