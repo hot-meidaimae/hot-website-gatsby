@@ -12,48 +12,68 @@ description: |-
   ・途中外出可（一声おかけください）
 servicePricing:
   - name: 最初の30分
-    boothPrice: "273"
-    boothPriceTax: "300"
-    openPrice: "273"
-    openPriceTax: "300"
+    boothPrice: "291"
+    boothPriceTax: "320"
+    openPrice: "328"
+    openPriceTax: "360"
   - name: 各延長10分
     boothPrice: "82"
     boothPriceTax: "90"
     openPrice: "91"
     openPriceTax: "100"
-  - name: モーニング2時間パック（5時～12時受付・受付から２時間）
+  - name: モーニング2時間パック（平日月～金朝5時～昼12時受付・受付から２時間）
     boothPrice: "619"
     boothPriceTax: "680"
-    openPrice: "710"
-    openPriceTax: "780"
+    openPrice: "728"
+    openPriceTax: "800"
   - name: |-
       3時間パック
       （終日）
     boothPrice: "891"
     boothPriceTax: "980"
-    openPrice: "1000"
-    openPriceTax: "1100"
+    openPrice: "1091"
+    openPriceTax: "1200"
   - name: |-
       5時間パック
       （終日）
     boothPrice: "1182"
     boothPriceTax: "1300"
-    openPrice: "1364"
-    openPriceTax: "1500"
+    openPrice: "1455"
+    openPriceTax: "1600"
   - name: |-
       9時間パック
       （終日）
     boothPrice: "1637"
     boothPriceTax: "1800"
-    openPrice: "2000"
-    openPriceTax: "2200"
+    openPrice: "2091"
+    openPriceTax: "2300"
   - name: |-
       12時間パック
       （終日）
     boothPrice: "1819"
     boothPriceTax: "2000"
-    openPrice: "2546"
-    openPriceTax: "2800"
+    openPrice: "2728"
+    openPriceTax: "3000"
+  - name: 15時間パック(終日)
+    boothPrice: "2091"
+    boothPriceTax: "2300"
+    openPrice: "3455"
+    openPriceTax: "3800"
+  - name: 18時間パック
+    boothPrice: "2364"
+    boothPriceTax: "2600"
+    openPrice: "4182"
+    openPriceTax: "4600"
+  - name: 21時間パック
+    boothPrice: "2367"
+    boothPriceTax: "2900"
+    openPrice: "4728"
+    openPriceTax: "5200"
+  - name: 24時間パック
+    boothPrice: "2910"
+    boothPriceTax: "3200"
+    openPrice: "5364"
+    openPriceTax: "5900"
 showerPricing:
   - name: 当店利用時30分
     price: "300"
