@@ -79,7 +79,7 @@ servicePricing:
     boothPriceTax: "680"
     openPrice: "728"
     openPriceTax: "800"
-  - name: 日曜イブニング2時間パック（日曜19：00～24：00受付）
+  - name: 日曜イブニング2時間パック（日曜19:00～24:00受付）
     boothPrice: "619"
     boothPriceTax: "680"
     openPrice: "728"
