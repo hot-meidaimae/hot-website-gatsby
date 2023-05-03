@@ -16,7 +16,7 @@ mainpitch:
     ・最初にコースを選ばなくても自動で一番お得な料金が適用されるようになりました
 newcomerHeading: はじめての方へ
 newcomerImage: /img/howto2.jpg
-heading: おひとり様専用の漫画喫茶です。
+heading: おひとり様専用の漫画喫茶です
 description: 図書館のような静かなお店です。店内で通話（zoom
   等含む）はできませんのでご注意ください。おひとり様専用のお店ですが、２名様以上の場合も別々の個室、またはオープン席のご利用は大歓迎です。
 intro:
