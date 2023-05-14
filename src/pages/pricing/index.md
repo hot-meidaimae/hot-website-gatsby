@@ -12,8 +12,8 @@ description: |-
   ・途中外出可（一声おかけください）
 servicePricing:
   - name: 最初の30分
-    boothPrice: "291"
-    boothPriceTax: "320"
+    boothPrice: "300"
+    boothPriceTax: "330"
     openPrice: "328"
     openPriceTax: "360"
   - name: 各延長10分
@@ -22,10 +22,10 @@ servicePricing:
     openPrice: "91"
     openPriceTax: "100"
   - name: 1時間パック（終日）
-    boothPrice: "519"
-    boothPriceTax: "570"
-    openPrice: "537"
-    openPriceTax: "590"
+    boothPrice: "528"
+    boothPriceTax: "580"
+    openPrice: "546"
+    openPriceTax: "600"
   - name: |-
       3時間パック
       （終日）
@@ -38,8 +38,8 @@ servicePricing:
       （終日）
     boothPrice: "1182"
     boothPriceTax: "1300"
-    openPrice: "1455"
-    openPriceTax: "1600"
+    openPrice: "1546"
+    openPriceTax: "1700"
   - name: |-
       9時間パック
       （終日）
@@ -67,32 +67,22 @@ servicePricing:
   - name: 21時間パック(終日)
     boothPrice: "2367"
     boothPriceTax: "2900"
-    openPrice: "4728"
-    openPriceTax: "5200"
+    openPrice: "4910"
+    openPriceTax: "5400"
   - name: 24時間パック(終日)
     boothPrice: "2910"
     boothPriceTax: "3200"
-    openPrice: "5364"
-    openPriceTax: "5900"
-  - name: モーニング2時間パック（月～金5:00~12:00受付）※祝日除く
-    boothPrice: "619"
-    boothPriceTax: "680"
-    openPrice: "728"
-    openPriceTax: "800"
-  - name: イブニング2時間パック（日曜19:00～24:00受付）
-    boothPrice: "619"
-    boothPriceTax: "680"
-    openPrice: "728"
-    openPriceTax: "800"
+    openPrice: "5455"
+    openPriceTax: "6000"
 showerPricing:
   - name: 当店利用時30分
     price: "300"
   - name: シャワーのみ30分
-    price: "620"
+    price: "630"
   - name: 各延長10分
     price: "90"
   - name: フェイスタオル
-    price: "100"
+    price: "120"
   - name: バスタオル
     price: "300"
   - name: ボディースポンジ
