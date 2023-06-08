@@ -82,9 +82,9 @@ showerPricing:
     price: "630"
   - name: 各延長10分
     price: "90"
-  - name: フェイスタオル
+  - name: フェイスタオル販売
     price: "120"
-  - name: バスタオル
+  - name: バスタオル販売
     price: "300"
   - name: ボディースポンジ
     price: "50"
