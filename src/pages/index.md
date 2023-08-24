@@ -7,7 +7,7 @@ slideImages:
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
-  title: おひとり様専用・２４時間営業の泊まれる漫画喫茶
+  title: おひとり様専用・２４時間営業の泊まれる漫画喫茶　manga cafe exclusively for one person
   description: |-
     店内明るくきれいになりました(202301)
     ・換気力がさらに向上しました(202301)
@@ -16,9 +16,12 @@ mainpitch:
     ・最初にコースを選ばなくても自動で一番お得な料金が適用されるようになりました
 newcomerHeading: はじめての方へ
 newcomerImage: /img/howto2.jpg
-heading: おひとり様専用の漫画喫茶です
+heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
 description: 図書館のような静かなお店です。店内で通話（zoom
-  等含む）はできませんのでご注意ください。また、２名様以上の場合も別々の個室、またはオープン席のご利用は大歓迎です。
+  等含む）はできませんのでご注意ください。また、２名様以上の場合も別々の個室、またはオープン席のご利用は大歓迎です。It's a quiet shop
+  like a library. Please note that you can't make calls (including zoom, etc.)
+  in the store. Also, if you are more than 2 people, you are very welcome to use
+  separate private rooms or open seats.
 intro:
   - name: 静かで清潔な空間
     text: 個室とオープン席がござます。漫画・ネット・お仕事・ご宿泊などにお使いいただけます。店内で通話（zoom 等含む）はできませんのでご注意ください。
