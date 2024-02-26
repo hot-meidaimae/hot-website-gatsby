@@ -27,6 +27,7 @@ type Props = {
     name: string;
     price: number;
   }[];
+  notice: string;
   description: string;
   showerDescription: string;
 };
@@ -37,11 +38,12 @@ export const PricingPageTemplate: React.FC<Props> = ({
   servicePricing,
   showerPricing,
   description,
+  notice,
   showerDescription,
 }) => {
   return (
     <PageTemplate title={title} image={image}>
-      <ServicePricing pricing={servicePricing} description={description} />
+      <ServicePricing pricing={servicePricing} description={description} notice={notice} />
       <ShowerPricing pricing={showerPricing} description={showerDescription} />
     </PageTemplate>
   );
@@ -58,6 +60,7 @@ const PricingPage: React.FC<TemplateProps> = ({ data }) => {
         servicePricing={frontmatter.servicePricing}
         showerPricing={frontmatter.showerPricing}
         description={frontmatter.description}
+        notice={frontmatter.notice}
         showerDescription={frontmatter.showerDescription}
       />
     </>
@@ -79,6 +82,7 @@ export const pricingPageQuery = graphql`
           }
         }
         description
+        notice
         showerDescription
         servicePricing {
           name

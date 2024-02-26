@@ -3,6 +3,7 @@ import classes from "./Pricing.module.scss";
 
 type Props = {
   description: string;
+  notice: string;
   pricing: {
     name: string;
     boothPrice: number;
@@ -14,6 +15,7 @@ type Props = {
 
 const Pricing: React.FC<Props> = (props) => (
   <>
+    <div className={classes.Notice}>{props.notice}</div>
     <div className={classes.PreLine}>{props.description}</div>
     <table className={classes.Table}>
       <thead>
