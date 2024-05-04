@@ -15,7 +15,7 @@ mainpitch:
     ・個室の仕切りが高くなりました
     ・最初にコースを選ばなくても自動で一番お得な料金が適用されるようになりました
 newcomerHeading: はじめての方へ
-newcomerImage: /img/howto2.jpg
+newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
 description: >-
   図書館のような静かなお店です。店内で通話（zoom
