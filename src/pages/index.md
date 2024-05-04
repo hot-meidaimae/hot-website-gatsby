@@ -9,6 +9,7 @@ slideImages:
 mainpitch:
   title: おひとり様専用・２４時間営業の泊まれる漫画喫茶　manga cafe exclusively for one person
   description: |-
+    ・孤独になりたい方向けの漫画喫茶です。
     ・2名様以上も別々の個室・オープン席の利用は大歓迎！
     ・最近はお仕事で使われるお客様、女性のお客様、年配のお客様が物凄く増えました。ネットカフェが初めての方もお気軽にお越しください☺️
 newcomerHeading: はじめての方へ
