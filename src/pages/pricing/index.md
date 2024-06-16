@@ -4,7 +4,7 @@ templateKey: pricing-page
 image: /img/hotstation_logo-min.png
 title: 料金
 notice: |-
-  ・会員登録無料キャンペーン中！！PC利用なければ会員登録なしでもご利用いただけます！
+  ・会員登録無料キャンペーン中！！(PC利用なければ会員登録しなくてもOK）
   ・会員の方はポイント（１００円で１ポイント＝５円）が貯まります！
   （例・個室３時間パックで６０円分！個室１２時間パックで１５０円分！スゴイ・・！）
 description: |-
