@@ -78,6 +78,11 @@ servicePricing:
     boothPriceTax: "3200"
     openPrice: "5455"
     openPriceTax: "6000"
+  - name: モーニングパック２時間（平日午前６時～１１時）
+    boothPrice: "819"
+    boothPriceTax: "900"
+    openPrice: "728"
+    openPriceTax: "800"
 showerPricing:
   - name: 当店利用時30分
     price: "300"
