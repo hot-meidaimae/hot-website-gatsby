@@ -7,11 +7,16 @@ slideImages:
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
-  title: おひとり様専用・２４時間営業の泊まれる漫画喫茶　manga cafe exclusively for one person
+  title: 年末年始営業のお知らせ
   description: |-
-    ・ひとりが好きな方・ひとりになりたい方向けの漫画喫茶です。
-    ・2名様以上も別々の個室・オープン席の利用は大歓迎です。
-    ・最近はお仕事で使われるお客様、女性のお客様、年配のお客様が物凄く増えました。漫画喫茶が初めての方もお気軽にお越しください☺️
+    店内改装・大掃除のため以下の営業となります
+
+    1﻿2/30 朝10時まで
+    12/31 休み
+    1/1   休み
+    1/2   休み
+    1/3   休み
+    1/4   朝10時オープン
 newcomerHeading: はじめての方へ
 newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
