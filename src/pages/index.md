@@ -7,16 +7,8 @@ slideImages:
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
-  title: 年末年始営業のお知らせ
-  description: |-
-    店内改装・大掃除のため以下の営業となります
-
-    1﻿2/30 朝10時まで
-    12/31 休み
-    1/1   休み
-    1/2   休み
-    1/3   休み
-    1/4   朝10時オープン
+  title: ２０２５／１／４   リニューアルオープン!!
+  description: 店内きれいになりました。ぜひご来店ください！
 newcomerHeading: はじめての方へ
 newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
