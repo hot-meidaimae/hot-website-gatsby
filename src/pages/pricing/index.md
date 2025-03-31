@@ -85,15 +85,15 @@ servicePricing:
     openPriceTax: "900"
 showerPricing:
   - name: 当店利用時30分
-    price: "300"
+    price: "330"
   - name: シャワーのみ30分
-    price: "630"
+    price: "660"
   - name: 各延長10分
     price: "90"
   - name: フェイスタオル販売
-    price: "120"
+    price: "150"
   - name: バスタオル販売
-    price: "300"
+    price: "400"
   - name: ボディースポンジ
     price: "50"
 showerDescription: |-
