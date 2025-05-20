@@ -16,73 +16,39 @@ description: |-
   ・料金は激安ですが、衛生的な店内を心がけていますので安心してご来店ください。
 servicePricing:
   - name: 最初の30分
-    boothPrice: "300"
-    boothPriceTax: "330"
-    openPrice: "328"
-    openPriceTax: "360"
+    boothPrice: "400"
+    boothPriceTax: "420"
+    openPrice: "380"
+    openPriceTax: "400"
   - name: 各延長10分
-    boothPrice: "82"
-    boothPriceTax: "90"
-    openPrice: "91"
+    boothPrice: "120"
+    boothPriceTax: "120"
+    openPrice: "100"
     openPriceTax: "100"
   - name: 1時間パック（終日）
-    boothPrice: "528"
-    boothPriceTax: "580"
-    openPrice: "546"
-    openPriceTax: "600"
+    boothPrice: "600"
+    boothPriceTax: "650"
+    openPrice: "580"
+    openPriceTax: "630"
   - name: |-
       3時間パック
       （終日）
-    boothPrice: "891"
-    boothPriceTax: "980"
-    openPrice: "1091"
+    boothPrice: "1300"
+    boothPriceTax: "1400"
+    openPrice: "1100"
     openPriceTax: "1200"
-  - name: |-
-      5時間パック
-      （終日）
-    boothPrice: "1182"
-    boothPriceTax: "1300"
-    openPrice: "1546"
-    openPriceTax: "1700"
   - name: |-
       9時間パック
       （終日）
-    boothPrice: "1637"
-    boothPriceTax: "1800"
-    openPrice: "2091"
-    openPriceTax: "2300"
-  - name: |-
-      12時間パック
-      （終日）
-    boothPrice: "1819"
-    boothPriceTax: "2000"
-    openPrice: "2728"
-    openPriceTax: "3000"
-  - name: 15時間パック(終日)
-    boothPrice: "2091"
-    boothPriceTax: "2300"
-    openPrice: "3455"
-    openPriceTax: "3800"
-  - name: 18時間パック(終日)
-    boothPrice: "2364"
-    boothPriceTax: "2600"
-    openPrice: "4182"
-    openPriceTax: "4600"
-  - name: 21時間パック(終日)
-    boothPrice: "2367"
-    boothPriceTax: "2900"
-    openPrice: "4910"
-    openPriceTax: "5400"
-  - name: 24時間パック(終日)
-    boothPrice: "2910"
-    boothPriceTax: "3200"
-    openPrice: "5455"
-    openPriceTax: "6000"
-  - name: モーニングパック２時間（平日午前６時～１１時入店）
-    boothPrice: "728"
-    boothPriceTax: "800"
-    openPrice: "819"
-    openPriceTax: "900"
+    boothPrice: "2600"
+    boothPriceTax: "2800"
+    openPrice: "2000"
+    openPriceTax: "2100"
+  - name: 平日限定モーニングパック２時間（平日午前６時～１１時入店）
+    boothPrice: "900"
+    boothPriceTax: "900"
+    openPrice: "700"
+    openPriceTax: "700"
 showerPricing:
   - name: 当店利用時30分
     price: "330"
