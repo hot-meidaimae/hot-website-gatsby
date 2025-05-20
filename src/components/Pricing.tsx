@@ -34,21 +34,27 @@ const Pricing: React.FC<Props> = (props) => (
             {el.boothPrice === el.openPrice ? (
               <td className={classes.Td} colSpan={2}>
                 ¥{el.boothPrice}
-                <span className={classes.Txt}>（休日深夜¥{el.boothPriceTax}）</span>
+                <span className={classes.Txt}>
+                  （休日深夜¥{el.boothPriceTax}）
+                </span>
               </td>
             ) : (
               <>
                 <td className={classes.Td}>
-                  ¥{el.boothPrice}
-                  <span className={classes.Txt}>
-                    （休日深夜¥{el.boothPriceTax}）
-                  </span>
+                  ¥{el.openPrice}
+                  {el.openPrice != el.openPriceTax && (
+                    <span className={classes.Txt}>
+                      （休日深夜¥{el.openPriceTax}）
+                    </span>
+                  )}
                 </td>
                 <td className={classes.Td}>
-                  ¥{el.openPrice}
-                  <span className={classes.Txt}>
-                    （休日深夜¥{el.openPriceTax}）
-                  </span>
+                  ¥{el.boothPrice}
+                  {el.boothPrice != el.boothPriceTax && (
+                    <span className={classes.Txt}>
+                      （休日深夜¥{el.boothPriceTax}）
+                    </span>
+                  )}
                 </td>
               </>
             )}
