@@ -113,19 +113,19 @@ collections:
               fields:
                 [
                   { label: コース名, name: name, widget: string },
-                  { label: 個室席（税抜）, name: boothPrice, widget: string },
+                  { label: 個室席, name: boothPrice, widget: string },
                   {
-                    label: 個室席（税込）,
+                    label: 個室席（休日深夜）,
                     name: boothPriceTax,
                     widget: string,
                   },
                   {
-                    label: オープン席（税抜）,
+                    label: オープン席,
                     name: openPrice,
                     widget: string,
                   },
                   {
-                    label: オープン席（税込）,
+                    label: オープン席（休日深夜）,
                     name: openPriceTax,
                     widget: string,
                   },
