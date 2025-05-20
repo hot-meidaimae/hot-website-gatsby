@@ -30,6 +30,11 @@ servicePricing:
     boothPriceTax: "650"
     openPrice: "580"
     openPriceTax: "630"
+  - name: 2時間パック（終日）
+    openPrice: "1000"
+    openPriceTax: "1050"
+    boothPrice: "1200"
+    boothPriceTax: "1250"
   - name: |-
       3時間パック
       （終日）
@@ -37,6 +42,11 @@ servicePricing:
     boothPriceTax: "1400"
     openPrice: "1100"
     openPriceTax: "1200"
+  - name: 6時間パック（終日）
+    openPrice: "1700"
+    openPriceTax: "1800"
+    boothPrice: "2000"
+    boothPriceTax: "2200"
   - name: |-
       9時間パック
       （終日）
@@ -44,7 +54,32 @@ servicePricing:
     boothPriceTax: "2800"
     openPrice: "2000"
     openPriceTax: "2100"
-  - name: 平日限定モーニングパック２時間（平日午前６時～１１時入店）
+  - name: 12時間パック（終日）
+    openPrice: "2300"
+    openPriceTax: "2400"
+    boothPrice: "3200"
+    boothPriceTax: "3400"
+  - name: 15時間パック（終日）
+    openPrice: "2600"
+    openPriceTax: "2700"
+    boothPrice: "3900"
+    boothPriceTax: "4100"
+  - name: 18時間パック（終日）
+    openPrice: "2900"
+    openPriceTax: "3000"
+    boothPrice: "4600"
+    boothPriceTax: "4800"
+  - name: 21時間パック（終日）
+    openPrice: "3200"
+    openPriceTax: "3300"
+    boothPrice: "5300"
+    boothPriceTax: "5500"
+  - name: 24時間パック（終日）
+    openPrice: "3500"
+    openPriceTax: "3600"
+    boothPrice: "6000"
+    boothPriceTax: "6200"
+  - name: 平日限定モーニングパック2時間（午前6時～11時入店から2時間）
     boothPrice: "900"
     boothPriceTax: "900"
     openPrice: "700"
