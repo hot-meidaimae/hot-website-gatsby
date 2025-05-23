@@ -9,7 +9,7 @@ slideImages:
 mainpitch:
   title: ２０２５／１／４   リニューアルオープン!!
   description: |-
-    ![](/img/img_2228.jpeg)
+    ![]()
 
     店内きれいになりました。ぜひご来店ください！
 newcomerHeading: はじめての方へ
