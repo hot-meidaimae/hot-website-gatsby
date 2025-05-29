@@ -8,10 +8,7 @@ slideImages:
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
   title: ２０２５／１／４   リニューアルオープン!!
-  description: |-
-    ![]()
-
-    店内きれいになりました。ぜひご来店ください！
+  description: 店内きれいになりました。ぜひご来店ください！
 newcomerHeading: はじめての方へ
 newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
