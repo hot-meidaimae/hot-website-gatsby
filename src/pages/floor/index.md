@@ -21,7 +21,7 @@ facility:
 path: /floor
 templateKey: floor-page
 movieChannelImage: /img/tv_drama.png
-floorMapImage: /img/2020_floorMap.jpg
+floorMapImage: /img/hotstation-map-new-6.jpg
 seats:
   - name: リクライニング席
     text: 定番のお席です。ゆっくりしたい方向け。作業やお仕事には椅子の高さを調整できるビジネス席がおすすめです。
