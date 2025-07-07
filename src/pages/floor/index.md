@@ -7,7 +7,9 @@ facility:
     text: シャンプーリンスボディーソープ込み。店舗利用時は３０分３００円。シャワーのみ利用は３０分６００円。
     image: /img/facility/shower.jpg
   - name: プリンター
-    text: プリントアウトはカラー・モノクロ共にA４・A５・Ｂ４・Ｂ５は１枚１枚２０円（税込）、Ａ３は１枚４０円（税込）。
+    text: |
+      白黒A４・A３・Ｂ４・Ｂ５は１枚1０円（税込）
+      カラーA４・Ｂ４・Ｂ５は１枚5０円（税込）、A３は１枚８０円（税込）
     image: /img/kaden_printer.png
   - name: Wi-Fi
     text: Wi-Fi飛んでます。持ち込みのPCお使い頂けます。
