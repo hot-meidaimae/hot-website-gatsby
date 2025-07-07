@@ -10,6 +10,7 @@ facility:
     text: |
       白黒A４・A３・Ｂ４・Ｂ５は１枚1０円（税込）
       カラーA４・Ｂ４・Ｂ５は１枚5０円（税込）、A３は１枚８０円（税込）
+      用紙の持ち込みによる印刷はできません
     image: /img/kaden_printer.png
   - name: Wi-Fi
     text: Wi-Fi飛んでます。持ち込みのPCお使い頂けます。
