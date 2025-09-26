@@ -7,8 +7,8 @@ slideImages:
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
-  title: ２０２５／１／４   リニューアルオープン!!
-  description: 店内きれいになりました。ぜひご来店ください！
+  title: ２０２５／１０／１～　値下げいたします
+  description: 深夜と土日祝に適用されていた割増が10月からなくなりますので、いつでもお財布に優しい価格でご利用頂けます！学割もあります！
 newcomerHeading: はじめての方へ
 newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
