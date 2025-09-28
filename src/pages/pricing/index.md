@@ -19,15 +19,15 @@ description: |
   ・会員の方はポイントが貯まります（例・個室３時間パックで６５円分、１２時間パックで１６０円分、２４時間パックで３００円分）かなりの還元率です・・・
 servicePricing:
   - name: 最初の30分
-    boothPrice: "400"
-    boothPriceTax: "420"
-    openPrice: "380"
-    openPriceTax: "400"
+    boothPrice: "-"
+    boothPriceTax: "-"
+    openPrice: "-"
+    openPriceTax: "-"
   - name: 各延長10分
-    boothPrice: "120"
-    boothPriceTax: "120"
-    openPrice: "100"
-    openPriceTax: "100"
+    boothPrice: "-"
+    boothPriceTax: "-"
+    openPrice: "-"
+    openPriceTax: "-"
   - name: 1時間パック（終日）
     boothPrice: "600"
     boothPriceTax: "650"
