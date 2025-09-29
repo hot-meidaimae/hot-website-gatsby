@@ -2,14 +2,13 @@
 path: /pricing
 templateKey: pricing-page
 image: /img/hotstation_logo-min.png
-title: 料金・システム
+title: 料金メンテ中(2025.10より新料金)
 notice: |-
   ２０２５／１０／１～　値下げいたします
   深夜と土日祝に適用されていた割増が10月からなくなりますので、いつでもお財布に優しい価格でご利用頂けます！学割もあります！
 description: |
   ・店内で通話やzoomはできません。
   ・料金は後払いです。一番お得なコースが自動で適用されます。
-  ・平日深夜２２時～翌朝５時、金・祝日前１８時～と土日祝は休日深夜料金になります。
   ・会員登録（無料）をすると、パソコンや映画の視聴ができ、ポイントも貯まります。登録なしの利用も大歓迎です。
   ・お飲み物はフリードリンクです。（お酒は有料です）また、持ち込みも大歓迎です。
   ・シャワーは別料金です。ご利用の際は伝票をお持ちください。
@@ -19,69 +18,69 @@ description: |
   ・会員の方はポイントが貯まります（例・個室３時間パックで６５円分、１２時間パックで１６０円分、２４時間パックで３００円分）かなりの還元率です・・・
 servicePricing:
   - name: 最初の30分
-    boothPrice: "-"
+    boothPrice: "364"
     boothPriceTax: "-"
-    openPrice: "-"
+    openPrice: "346"
     openPriceTax: "-"
   - name: 各延長10分
-    boothPrice: "-"
+    boothPrice: "110"
     boothPriceTax: "-"
-    openPrice: "-"
+    openPrice: "91"
     openPriceTax: "-"
   - name: 1時間パック（終日）
-    boothPrice: "600"
-    boothPriceTax: "650"
-    openPrice: "580"
-    openPriceTax: "630"
-  - name: 2時間パック（終日）
-    openPrice: "1000"
-    openPriceTax: "1050"
-    boothPrice: "1200"
-    boothPriceTax: "1250"
-  - name: 3時間パック（終日）
-    boothPrice: "1300"
-    boothPriceTax: "1400"
-    openPrice: "1100"
-    openPriceTax: "1200"
-  - name: 6時間パック（終日）
-    openPrice: "1700"
-    openPriceTax: "1800"
-    boothPrice: "2000"
-    boothPriceTax: "2200"
-  - name: 9時間パック（終日）
-    boothPrice: "2600"
-    boothPriceTax: "2800"
-    openPrice: "2000"
-    openPriceTax: "2100"
-  - name: 12時間パック（終日）
-    openPrice: "2300"
-    openPriceTax: "2400"
-    boothPrice: "3200"
-    boothPriceTax: "3400"
-  - name: 15時間パック（終日）
-    openPrice: "2600"
-    openPriceTax: "2700"
-    boothPrice: "3900"
-    boothPriceTax: "4100"
-  - name: 18時間パック（終日）
-    openPrice: "2900"
-    openPriceTax: "3000"
-    boothPrice: "4600"
-    boothPriceTax: "4800"
-  - name: 21時間パック（終日）
-    openPrice: "3200"
-    openPriceTax: "3300"
-    boothPrice: "5300"
-    boothPriceTax: "5500"
-  - name: 24時間パック（終日）
-    openPrice: "3500"
-    openPriceTax: "3600"
-    boothPrice: "6000"
-    boothPriceTax: "6200"
-  - name: 平日限定モーニングパック2時間（午前6時～11時入店から2時間）
-    boothPrice: "800"
+    boothPrice: "546"
     boothPriceTax: "-"
-    openPrice: "700"
+    openPrice: "528"
+    openPriceTax: "-"
+  - name: 2時間パック（終日）
+    openPrice: "910"
+    openPriceTax: "-"
+    boothPrice: "1091"
+    boothPriceTax: "-"
+  - name: 3時間パック（終日）
+    boothPrice: "1182"
+    boothPriceTax: "-"
+    openPrice: "1000"
+    openPriceTax: "-"
+  - name: 6時間パック（終日）
+    openPrice: "1546"
+    openPriceTax: "-"
+    boothPrice: "1819"
+    boothPriceTax: "-"
+  - name: 9時間パック（終日）
+    boothPrice: "2364"
+    boothPriceTax: "-"
+    openPrice: "1819"
+    openPriceTax: "-"
+  - name: 12時間パック（終日）
+    openPrice: "2091"
+    openPriceTax: "-"
+    boothPrice: "2910"
+    boothPriceTax: "-"
+  - name: 15時間パック（終日）
+    openPrice: "2364"
+    openPriceTax: "-"
+    boothPrice: "3546"
+    boothPriceTax: "-"
+  - name: 18時間パック（終日）
+    openPrice: "2637"
+    openPriceTax: "-"
+    boothPrice: "4182"
+    boothPriceTax: "-"
+  - name: 21時間パック（終日）
+    openPrice: "2910"
+    openPriceTax: "-"
+    boothPrice: "4819"
+    boothPriceTax: "-"
+  - name: 24時間パック（終日）
+    openPrice: "3182"
+    openPriceTax: "-"
+    boothPrice: "5455"
+    boothPriceTax: "-"
+  - name: 平日限定モーニングパック2時間（午前6時～11時入店から2時間）
+    boothPrice: "726"
+    boothPriceTax: "-"
+    openPrice: "637"
     openPriceTax: "-"
 showerPricing:
   - name: 当店利用時30分
