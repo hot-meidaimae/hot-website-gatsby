@@ -21,8 +21,8 @@ const Pricing: React.FC<Props> = (props) => (
       <thead>
         <tr className={classes.Tr}>
           <th className={classes.Th}>&nbsp;</th>
-          <th className={classes.Th}>オープン席（税込）</th>
-          <th className={classes.Th}>個室席（税込）</th>
+          <th className={classes.Th}>オープン席</th>
+          <th className={classes.Th}>個室席</th>
         </tr>
       </thead>
       <tbody className={classes.Tbody}>
@@ -35,7 +35,7 @@ const Pricing: React.FC<Props> = (props) => (
               <td className={classes.Td} colSpan={2}>
                 ¥{el.boothPrice}
                 <span className={classes.Txt}>
-                  （休日深夜¥{el.boothPriceTax}）
+                  （税込¥{el.boothPriceTax}）
                 </span>
               </td>
             ) : (
@@ -44,7 +44,7 @@ const Pricing: React.FC<Props> = (props) => (
                   ¥{el.openPrice}
                   {el.openPrice != el.openPriceTax && (
                     <span className={classes.Txt}>
-                      （休日深夜¥{el.openPriceTax}）
+                      （税込¥{el.openPriceTax}）
                     </span>
                   )}
                 </td>
@@ -52,7 +52,7 @@ const Pricing: React.FC<Props> = (props) => (
                   ¥{el.boothPrice}
                   {el.boothPrice != el.boothPriceTax && (
                     <span className={classes.Txt}>
-                      （休日深夜¥{el.boothPriceTax}）
+                      （税込¥{el.boothPriceTax}）
                     </span>
                   )}
                 </td>
