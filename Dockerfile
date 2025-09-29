@@ -1,8 +1,17 @@
-FROM node:12
+FROM ubuntu:24.04
 
-RUN echo "deb http://archive.debian.org/debian/ stretch main" > /etc/apt/sources.list \
-    && echo "deb http://archive.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list \
-    && apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
     libvips \
-    libvips-dev \
-    glib2.0-dev
+    libvips-dev
+
+RUN apt-get install -y software-properties-common && \
+    add-apt-repository -y ppa:deadsnakes/ppa && \
+    apt-get update && \
+    apt-get install -y python3.10
+
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash \
+    && \. "$HOME/.nvm/nvm.sh" \
+    && nvm install 12 \
+    && npm config set python /usr/bin/python3.10
