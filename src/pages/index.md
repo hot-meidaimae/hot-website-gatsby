@@ -8,7 +8,7 @@ slideImages:
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
   title: 値下げしました！
-  description: 深夜と土日祝に適用されていた割増がので、いつでもお財布に優しい価格でご利用頂けます！学割もあります！
+  description: " 深夜と土日祝に適用されていた割増がなくなりましたので、いつでもお財布に優しい価格でご利用頂けます！学割もあります！"
 newcomerHeading: はじめての方へ
 newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
