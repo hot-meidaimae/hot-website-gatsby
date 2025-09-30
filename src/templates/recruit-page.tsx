@@ -45,15 +45,6 @@ export const RecruitPageTemplate: React.FC<Props> = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <p>{description}</p>
-              <p>
-                ほっとステーション明大前店のLINE公式アカウントを友達追加しておくと、新しいアルバイト募集があった際にお知らせいたします。
-              </p>
-              <a href="https://lin.ee/OwLfsCc">
-                <img
-                  height="36"
-                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                />
-              </a>
             </div>
           </div>
         </div>
