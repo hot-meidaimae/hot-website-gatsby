@@ -7,8 +7,8 @@ slideImages:
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
-  title: 値下げしました！
-  description: 深夜と土日祝に適用されていた割増がなくなりましたので、いつでもお財布に優しい価格でご利用頂けます！さらに学割（学生証提示で１０％オフ）もあります！
+  title: １０月８日（水）午前９時～午後１８時頃までエアコン工事のため店を閉めさせていただきます
+  description: 値下げしました！深夜と土日祝に適用されていた割増がなくなりましたので、いつでもお財布に優しい価格でご利用頂けます！さらに学割（学生証提示で１０％オフ）もあります！
 newcomerHeading: はじめての方へ
 newcomerImage: /img/ほっと使い方.jpeg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
