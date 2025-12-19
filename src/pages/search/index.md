@@ -5,7 +5,7 @@ path: /search
 image: /img/s__41992197.jpg
 title: コミック検索
 description: ひらがなや題名の一部でも検索できます！漢字やスペルが間違っていると検索できないのでお試しください！
-floorMapImage: /img/52f982f7b0f35f4283ce2f8383271ba64610969d.jpg
+floorMapImage: /img/46bf5ab8eb9bc810f8ce73b26f9cc22a3e10ca7a.jpg
 magazines: |-
   ★週刊★
     少年ジャンプ（月曜日）
