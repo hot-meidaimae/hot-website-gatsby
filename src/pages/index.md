@@ -3,7 +3,7 @@ templateKey: index-page
 title: ほっとステーション明大前店
 image: /img/logo.jpg
 slideImages:
-  - /img/20200714_renewaldeveloped2.jpg
+  - /img/2a0d5f644168091cc7064c56bb51ceb3acebc48b.png
   - /img/DSC00735_h800-min.jpg
   - /img/ef5nmpoueaaw91r.jpg
 mainpitch:
