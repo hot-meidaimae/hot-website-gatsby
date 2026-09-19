@@ -10,7 +10,7 @@ mainpitch:
   title: 2026.1.4リニューアルオープン！
   description: 店内きれいになりました！
 newcomerHeading: はじめての方へ
-newcomerImage: /img/ほっと使い方.jpeg
+newcomerImage: /img/0717fe95c39433f02cdfd505d1622fb0681ab847.jpg
 heading: おひとり様専用の漫画喫茶です　manga cafe exclusively for one person
 description: >-
   図書館のような静かなお店です。店内で通話（zoom
